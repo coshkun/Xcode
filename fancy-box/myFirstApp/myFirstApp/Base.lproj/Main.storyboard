@@ -18,25 +18,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ios öğreniyorum.." textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nhb-Mf-DOn">
-                                <rect key="frame" x="16" y="287" width="568" height="25"/>
+                                <rect key="frame" x="16" y="287" width="568" height="20"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwV-4c-IGq">
+                                <rect key="frame" x="30" y="20" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Label Oluştur"/>
+                                <connections>
+                                    <action selector="labelOlustur" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ug5-FN-b9e"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ucak.png" translatesAutoresizingMaskIntoConstraints="NO" id="rO6-mC-9p3">
+                                <rect key="frame" x="180" y="315" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="GZZ-YD-cuQ"/>
+                                    <constraint firstAttribute="width" constant="240" id="jUf-at-BYu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe5-Tp-U6C">
+                                <rect key="frame" x="30" y="58" width="100" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Resim Değiştir">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resmiDegistir" destination="BYZ-38-t0r" eventType="touchUpInside" id="Owo-4t-gQg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rO6-mC-9p3" firstAttribute="centerX" secondItem="nhb-Mf-DOn" secondAttribute="centerX" id="CZA-ry-aAZ"/>
                             <constraint firstItem="nhb-Mf-DOn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SuN-BL-GI4"/>
+                            <constraint firstItem="rO6-mC-9p3" firstAttribute="top" secondItem="nhb-Mf-DOn" secondAttribute="bottom" constant="8" symbolic="YES" id="myO-qa-FTm"/>
                             <constraint firstItem="nhb-Mf-DOn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="q47-UY-jBa"/>
                             <constraint firstItem="nhb-Mf-DOn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="287" id="qAj-EQ-wtH"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="etiket" destination="nhb-Mf-DOn" id="POH-zr-7oA"/>
+                        <outlet property="myImageView" destination="rO6-mC-9p3" id="4v3-QJ-tel"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="ucak.png" width="512" height="512"/>
+    </resources>
 </document>
