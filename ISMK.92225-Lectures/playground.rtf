@@ -1,0 +1,1495 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red170\green13\blue145;\red92\green38\blue153;
+\red63\green110\blue116;\red196\green26\blue22;\red28\green0\blue207;\red46\green13\blue110;\red38\green71\blue75;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww14200\viewh8400\viewkind0
+\deftab1780
+\pard\tx1780\pardeftab1780\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf2 \CocoaLigature0 //: Playground - noun: a place where people can play\
+\cf0 \
+\cf3 import\cf0  UIKit\
+\cf2 /*\
+//Veri T\'fcrleri\
+\
+\
+//let lname = "Y\uc0\u305 lmaz"\
+var age : Int = 28\
+var age2 = 21\
+//print("Ad\uc0\u305  : \\(name) Soyad\u305 : \\(lname) Ya\u351 \u305 : \\(age)")\
+\
+let n1 = 11\
+let result = (n1 + 2) * 3\
+\
+//convert\
+\
+\
+let integer : Int = 10\
+let double : Double = 11.3\
+//let result2 : Double = Double(integer * double)\
+\
+//\
+let isEquals : Bool = (1 == 1)\
+let isEquals2 : Bool = (1 < 1)\
+let isEquals3 = (1 == 1) && true\
+let isEquals4 = false || true\
+\
+////////////lesson 2 \
+\
+let hourOfDay = 12\
+var timeOfDay : String\
+let name = "Yunus"\
+\
+if hourOfDay < 6 \{\
+    timeOfDay = "Early morning"\
+\}else if hourOfDay < 12 \{\
+    timeOfDay = "Afternon"\
+\}\
+else \{\
+    timeOfDay = "Evening"\
+\}\
+ */\cf0 \
+\cf2 /*\
+print(" \\(timeOfDay)")\
+\
+if 1 < 2 && name == "Yunus" \{\
+    //print("true")\
+    if name == "Y\uc0\u305 lmaz" \{\
+        print("")\
+    \}\
+    else \{\
+        print("")\
+    \}\
+\}\
+else \{\
+    print("")\
+\}\
+if 3 == 3 || name == "Y\uc0\u305 lmaz" \{\
+    print("veya")\
+\}\
+//scope kavram\uc0\u305 \
+\
+var houseWorked = 45\
+\
+var price = 0\
+\
+if houseWorked < 40 \{\
+   // let houseWorked = houseWorked - 40 hata \'e7\'fcnk\'fc global scope local scope'u ezer.\
+    price += houseWorked\
+\}\
+//? operator\
+let a = 10\
+let b : Int = 20\
+\
+let min = a < b ? a : b\
+let max = a > b ? a : b\
+\
+//loops\
+\
+//while loop\
+\
+var sum = 1\
+\
+while sum < 10 \{\
+    sum += 1\
+    //print(sum)\
+\}\
+ */\cf0  \cf2 /*\
+sum = 0\
+repeat \{\
+    print(sum)\
+    sum += 1\
+\} while sum == 0\
+print(sum)\
+\
+while true \{\
+    sum += 1\
+    if sum >= 100 \{\
+        break\
+    \}\
+    print(sum)\
+\}\
+*/\cf0 \
+\
+\cf2 //////////////////////////////////////////////\
+///////////////////////15.05.2017\
+/*\
+let a = 5\
+let b = 10\
+\
+let min : Int\
+\
+if a < b \{\
+    min = a\
+\}\
+else\
+\{\
+    min = b\
+\}\
+\
+/// \
+/*\
+E\uc0\u351 it de\u287 il : !=\
+K\'fc\'e7\'fck / b\'fcy\'fck : <>\
+K\'fc\'e7\'fck e\uc0\u351 it / b\'fcy\'fck e\u351 it : <= >=\
+*/\
+//Ranges \
+\
+\
+let closedRange = 0...5 //0, 1, 2, 3, 4, 5\
+\
+//for loops \
+\
+let count = 10\
+var sum = 0\
+\
+for i in 1...count \{\
+    sum += i\
+\}\
+print(sum)\
+\
+for _ in 1...count \{\
+    print("tag")\
+\}\
+\
+for i in 1...count where i % 2 == 1 \{\
+    print("where")\
+\}\
+print(sum)\
+\
+///\'f6rnek\
+\
+let row = 0\
+let column = 0\
+\
+\
+for row in 0..<8 \{\
+    if row % 2 == 0 \{\
+        continue\
+    \}\
+    \
+    for column in 0..<8 \{\
+        //print(row * column)\
+    \}\
+\}\
+\
+///\
+for row in 0..<8 where row % 2 == 1\{\
+    for column in 0..<8 \{\
+        print(row * column)\
+    \}\
+\}\
+//switch\
+\
+let numberForSwitch = 10\
+\
+switch numberForSwitch \{\
+case 5, 10:\
+    print("5 veya 10")\
+default:\
+    print("hicbiri")\
+\}\
+\
+let nameForSwitch = "Dog"\
+\
+switch nameForSwitch \{\
+case "Dog", "Cat":\
+    print(nameForSwitch)\
+case "bla" :\
+    print(nameForSwitch)\
+default:\
+    print("Hi\'e7biri")\
+\}\
+\
+switch numberForSwitch \{\
+case 0...5: //with range\
+    print(numberForSwitch)\
+default:\
+    print(numberForSwitch)\
+\}\
+\
+switch numberForSwitch \{\
+case _ where numberForSwitch % 2 == 0:\
+    print("\'c7ift say\uc0\u305 ")\
+default:\
+    print("Tek say\uc0\u305 ")\
+\}\
+//functions\
+\
+func printMyName() \{\
+    print("Yunus")\
+\}\
+\
+\
+printMyName()\
+\
+func sum(operand1: Int, operand2: Int) -> Int\{\
+    return operand1 + operand2\
+\}\
+\
+sum(operand1: 5, operand2: 20)\
+//with tag\
+func multply(first operand1: Int, last operand2: Int) -> Int \{\
+    return operand1 * operand2\
+\}\
+\
+func multply(_ operand1: Int, _ operand2: Int) -> Int \{\
+    return operand1 * operand2\
+\}\
+\
+multply(11, 22)\
+\
+//16.05.2015\
+func multply2(_ operand1: Int, _ operand2: Int = 1) -> (Int, Int) \{\
+    return (operand1 * operand2, operand2)\
+\}\
+//let result = multply2(5)\
+let result = multply2(5, 10)\
+result.0\
+result.1\
+//call by value and call by referance\
+/*\
+func incerementAndPrint(_ value: Int) \{\
+    value += 1\
+    print(value)\
+\}\
+ */\
+var val = 5\
+\
+func incerementAndPrint(_  value: inout Int) \{\
+    value += 1\
+    print(value)\
+\}\
+\
+incerementAndPrint(&val)\
+print(val)\
+\
+//overloading \
+\
+func getValue() -> Int \{\
+    return 11;\
+\}\
+func getValue() -> String \{\
+    return "11"\
+\}\
+\
+let resultForOver :String  = getValue()\
+//17.05.2017 \
+\
+//function as veriable\
+\
+\
+func add(_ a: Int, _ b:Int)->Int \{\
+    return a + b\
+\}\
+var function = add\
+\
+\
+function(5, 11)\
+\
+func printAndResult(_ function: (Int, Int) -> Int, _ a: Int, _ b: Int) \{\
+    let result = function(a, b)\
+    print(result)\
+\}\
+printAndResult(add, 5, 11)\
+\
+//no return\
+\
+func noResult()->Never \{\
+    while true \{\
+        print("asla d\'f6nmem")\
+    \}\
+    \
+\}\
+/*\
+for index in add(5, 1) \{\
+    print(index)\
+\}\
+*/\
+*/\cf0 \
+\cf2 /*\
+func fibonacci(_ number: Int)->Int \{\
+    if number <= 0 \{\
+        return 0\
+    \}\
+    else if number == 1 \{\
+        return 1\
+    \}\
+    else \{\
+        return fibonacci(number - 1) + fibonacci(number - 2)\
+    \}\
+\}\
+var num = 1\
+while num != 5\{\
+    print(fibonacci(num))\
+    num += 1\
+\}\
+//optionals\
+var name : String?\
+name = nil\
+//unwrapping\
+//print(name ?? "Yunus")\
+\
+//optional binding\
+\
+//guard mechanism\
+if let mName = name, let mName2 = name \{\
+    print(mName)\
+\}\
+else \{\
+    print("")\
+\}\
+if name != nil \{\
+    print("")\
+    name!\
+\}\
+\
+\
+func calculateFromSides(_ side: Int) -> String? \{\
+    switch side \{\
+    case 3:\
+        return "\'dc\'e7gen"\
+    case 4:\
+        return "Kare"\
+    default:\
+        return nil\
+    \}\
+ \
+\}\
+\
+if let result:String = calculateFromSides(5) \{\
+    print(result)\
+\}\
+else\
+\{\
+    print(calculateFromSides(5) ?? "no result")\
+\}\
+////////////22.05.2017\
+\
+//Collection Types\
+\
+//1. Arrays\
+\
+let evenNumbers = [2, 4, 6, 8]\
+\
+var subscribes : [String] = []\
+\
+var allZero = [Int] (repeating: 0, count: 5)\
+\
+print(allZero)\
+\
+var allZero2 : [Int] = [Int] (repeating: 0, count: 15)\
+\
+print(allZero2)\
+\
+var allZere3 = Array(repeating: 0, count: 4)\
+print(allZere3)\
+\
+let stringSet = ["A", "E", "T", "G", "R", "F", "Y", "U"]\
+print(stringSet)\
+\
+var players = ["Ali", "Ahmet", "Selim", "Engin"]\
+print(players.isEmpty)\
+if players.count < 2 \{\
+    print("Eleman say\uc0\u305 s\u305  2 den k\'fc\'e7\'fck")\
+\}\
+else \{\
+    print(players.count)\
+\}\
+print(players.first!)\
+print(players.last!)\
+\
+//methods in arrays\
+\
+let minElement = players.min()\
+\
+if let myElement = minElement \{\
+    print(myElement)\
+\}\
+\
+print((1...5).first!)\
+print([2, 3, 4, 5].min()!)\
+\
+print(players[3])\
+\
+\
+var upComingPlayer = players[0...2]\
+upComingPlayer.first!\
+\
+players.contains("Ali") //check element\
+players[0...2].contains("Ali")\
+\
+players.append("Ay\uc0\u351 e")//sonuna eleman ekleme\
+players += ["Serpil"]\
+\
+players.insert("Kamil", at: 5)//verilen index'e ekleme\
+\
+players.removeFirst()\
+players.removeLast()\
+players.remove(at: 4)\
+print(players)\
+\
+players[3] = "Serpil" //updated\
+print(players)\
+\
+players[0...1] = ["Dogan", "Asl\uc0\u305 ", "Halil", "Mehmet"]//range'e bak\u305 lmad\u305 .\
+print(players)\
+\
+players.sort()\
+print(players)\
+players.index(of: "Asl\uc0\u305 ")!\
+\
+\
+\
+func searchAndIndex(_ element: String) -> (Int, String)\{\
+    if !(players.contains(element)) \{\
+        players.append(element)\
+        players.sort()\
+    \}\
+    \
+    return (players.index(of: element)!, element)\
+\}\
+\
+let result = searchAndIndex("Ali")\
+print(result.0, result.1)\
+\
+//iterations\
+var temp:String = ""\
+for item in players \{\
+    temp = temp + " " + item\
+\}\
+print(temp)\
+\
+for (index, value) in players.enumerated() \{\
+    print("\\(index + 1). \\(value)")\
+\}\
+\
+func sumAllItems(in array:[Int]) -> Int \{\
+    var sum = 0\
+    for number in array \{\
+        sum += number\
+    \}\
+    return sum\
+\}\
+let ages : [Int] = [155, 11, 22, 66, 32, 28, 0]\
+print(sumAllItems(in: ages))\
+\
+//variadic parameters\
+\
+func sum(of numbers: Int...) -> Int \{\
+    var total = 0\
+    for number in numbers \{\
+        total += number\
+    \}\
+    return total\
+\}\
+\
+sum(of: 1, 6, 44, 55)\
+/* d\'fczenlenecek\
+func mySort(of numbers: Int...) \{\
+    var temp = -1\
+    var count = 0\
+    let mySortedArray:[Int] = numbers\
+    var repeatCount = numbers.count\
+    while repeatCount > 0\
+    \{\
+        for number in mySortedArray \{\
+            if count == 0 \{\
+                temp = number\
+            \}\
+            if number < temp \{\
+                temp = number\
+                \
+            \}\
+            \
+            count += 1\
+        \}\
+        repeatCount -= 1\
+    \}\
+    print(mySortedArray)\
+\}\
+mySort(of: 1, 0, 12, 11)\
+*/\
+////////23.05.2017\
+//dictionary\
+\
+var namesAndScore = ["Ali" : 2, "Selim" : 4, "Yavuz" : 11, "Kemal" : 6]\
+print(namesAndScore)\
+let namesAndScoreImplicit : [String:Int] = ["Ali" : 2, "Selim" : 4, "Yavuz" : 11, "Kemal" : 6]\
+\
+var score : [String:Int] = [:]\
+\
+print(namesAndScore["Yavuz"]!)\
+\
+//property and method\
+\
+namesAndScore.isEmpty\
+namesAndScore.count\
+\
+Array(namesAndScore.keys)\
+Array(namesAndScore.values)\
+\
+namesAndScore.updateValue(44, forKey: "Ali")\
+print(namesAndScore)\
+namesAndScore["Selim"] = 3\
+print(namesAndScore)\
+\
+namesAndScore.removeValue(forKey: "Kemal")\
+print(namesAndScore)\
+\
+namesAndScore["Ali"] = nil\
+print(namesAndScore)\
+\
+\
+//iterating\
+\
+for (key, value) in namesAndScore \{\
+    print("\\(key) - \\(value)")\
+\}\
+for key in namesAndScore.keys \{\
+    print(key)\
+\}\
+for val in namesAndScore.values \{\
+    print(val)\
+\}\
+print(false.hashValue)\
+print(10.hashValue)\
+print("Yunus".hashValue)\
+\
+//\
+\
+var myDict:[Int:String] = [34:"Istanbul", 06:"Ankara", 35:"Izmir"]\
+var myDict2:[Int:String] = [34:"Istanbul1", 06:"Ankara2", 17:"\'c7anakkale", 41:"Kocaeli"]\
+func findAndAddInMyDict(in myDictKey: Int, and Value: String) -> (Int, String) \{\
+    for (key, value) in myDict \{\
+        if key == myDictKey \{\
+            return (key, value)\
+        \}\
+    \}\
+    myDict[myDictKey] = Value\
+    return (myDictKey, Value)\
+\}\
+\
+findAndAddInMyDict(in: 01, and: "Adana")\
+print(myDict)\
+\
+func mergeDict(_ firstDict: inout [Int:String], secondDict: [Int:String])->Bool \{\
+    var flag = false\
+    for (key, val) in secondDict \{\
+        if firstDict.index(forKey: key) == nil\
+        \{\
+            firstDict[key] = val\
+            flag = true\
+        \}\
+    \}\
+    return flag\
+\}\
+\
+if mergeDict(&myDict, secondDict: myDict2) \{\
+    print(myDict)\
+\}\
+//clouser\
+\
+var multiplyCloser:(Int, Int) -> Int //decleration\
+\
+multiplyCloser = \{ (a: Int, b:Int) -> Int in //implementation\
+    return a * b\
+\}\
+let closerResult = multiplyCloser(10, 2)\
+\
+//\
+var addCloser = \{(a: Int, b:Int) -> Int in //bildirim ve tan\uc0\u305 mlama\
+    return a + b\
+\}\
+addCloser(5, 2)\
+\
+//\
+/*\
+var addCloser2 = \{(a: Int, b:Int) -> Int in //bildirim ve tan\uc0\u305 mlama\
+    a + b\
+\}\
+\
+var addCloser3 = \{(a: Int, b:Int)  in //bildirim ve tan\uc0\u305 mlama\
+    a + b\
+\}\
+\
+var addCloser4 = \{(a, b)  in //bildirim ve tan\uc0\u305 mlama\
+    a + b\
+\}\
+\
+var addCloser5 = \{ //bildirim ve tan\uc0\u305 mlama\
+    $0 + $1\
+\}\
+*/\
+func operationsOnNumber(_ a: Int, b: Int, operation: (Int, Int)->Int)->Int \{\
+    let result = operation(a, b)\
+    print(result)\
+    return result\
+\}\
+let add = \{ (a: Int, b: Int)->Int in\
+    if b == 0 \{\
+        return a + (b + 1)\
+    \}\
+    return a + b\
+\}\
+let multiply = \{(a:Int, b: Int) in\
+    return a * b\
+\}\
+let divide = \{(a: Int, b: Int)->Int in\
+    return a / b\
+\}\
+operationsOnNumber(12, b: 0, operation: add)\
+operationsOnNumber(12, b: 2, operation: multiply)\
+operationsOnNumber(12, b: 3, operation: divide)\
+//\
+\
+operationsOnNumber(11, b: 22, operation: \{(a:Int, b:Int)-> Int in return a + b\
+\})\
+operationsOnNumber(11, b: 22, operation: \{ $0 + $1\})\
+operationsOnNumber(4, b: 2) \{$0 + $1\}\
+//24.05.2017 \
+//Clouser'a devam\
+\
+//scope\
+\
+var count = 0\
+\
+let incerementCount = \{\
+    count += 1\
+\}\
+\
+incerementCount()\
+incerementCount()\
+incerementCount()\
+incerementCount()\
+print(count)\
+\
+func countingCloser()->(()->Int) \{\
+    var count = 0\
+    let incCount:()->Int = \{\
+        count += 1\
+        return count\
+    \}\
+    return incCount\
+\}\
+\
+let counter1 = countingCloser()\
+counter1()\
+\
+//custom methods with closures\
+let names = ["ZZZZZZZZ", "BB", "A", "CCCC", "EEEEE"]\
+names.sorted()\
+\
+names.sorted \{\
+    $0.characters.count > $1.characters.count\
+\}\
+\
+var prices = [1.5, 10, 4.99, 2.30, 8.19]\
+\
+let largePrices = prices.filter \{\
+    return $0 > 5\
+\}\
+\
+let salePrices = prices.map\{\
+    return $0 * 0.9\
+\}\
+\
+let sum = prices.reduce(0) \{\
+    return $0 + $1 * 18\
+\}\
+salePrices\
+sum\
+\
+//prices.dropFirst(2)\
+//prices.dropLast(1)\
+//prices.prefix(2)\
+//prices.suffix(1)\
+\
+//yap\uc0\u305 lar\
+\
+struct Location \{\
+    let x: Int\
+    let y: Int\
+\}\
+\
+var myLocation = Location(x: 10, y: 15)\
+myLocation.x\
+myLocation.y\
+\
+struct Person \{\
+    let name : String\
+    let lname : String\
+    let age : Int\
+    let price : Int\
+    \
+\}\
+\
+var person1 = Person(name: "Yunus", lname: "Y\uc0\u305 lmaz", age: 28, price: 1000)\
+var person2 = Person(name: "Yunus2", lname: "Y\uc0\u305 lmaz", age: 28, price: 1000)\
+\
+//30.05.2017\
+//methods in structs\
+let storeLocation = Location(x: 2, y:4)\
+\
+func distance(from source: (x: Int, y: Int), to target: (x: Int, y: Int))->Double \{\
+    let distanceX = Double(source.x - target.x)\
+    let distanceY = Double(source.y - target.y)\
+    \
+    return sqrt(distanceX * distanceX + distanceY * distanceY)\
+\}\
+\
+struct DeliveryArea: CustomStringConvertible \{\
+    var range:Double\
+    let center:Location\
+    \
+    var description: String \{\
+        return "Area with range: \\(range) Location: \\(center)"\
+    \}\
+    \
+    func isInDeliveryArea(_ location: Location)->Bool \{\
+        for area in areas \{\
+            let distanceToStore = distance(from: (area.center.x, area.center.y), to: (location.x, location.y))\
+            if distanceToStore < range \{\
+                return true\
+            \}\
+        \}\
+       return false\
+    \}\
+\}\
+let areas = [DeliveryArea(range: 2.5, center: Location(x:2, y:4)), DeliveryArea(range: 4.5, center: Location(x: 9, y: 7))]\
+\
+var storeArea = DeliveryArea(range:4, center: storeLocation)\
+\
+let customerLocation1 = Location(x: 8, y: 1)\
+let customerLocation2 = Location(x: 2, y: 4)\
+\
+print(storeArea.isInDeliveryArea(customerLocation1))\
+print(storeArea.isInDeliveryArea(customerLocation2))\
+\
+struct Student \{\
+    var age : Int\
+    var name : String\
+    \
+    func getAgeAndName()->(Int, String) \{\
+        return (age, name)\
+    \}\
+\}\
+var std1 = Student(age: 11, name: "Berkecan")\
+print(std1.getAgeAndName())\
+*/\cf0 \
+\cf2 /*\
+public struct Int : SignedInteger, Comparable, Equatable \{\
+    //...\
+\}\
+*/\cf0 \
+\cf2 /*public protocol CustomStringConvertible \{\
+    public var description: String \{get\}\
+\}\
+*/\cf0 \
+\cf2 /*\
+typealias BoardPrice = String\
+let x : BoardPrice = "X"\
+\
+\
+\
+//properties\
+\
+struct Contact \{\
+    var fullName: String = "" //default value\
+    var email: String = ""\
+\}\
+var myContact = Contact()\
+myContact.email = "yunus@yunus.com"\
+myContact.fullName = "yunus"\
+\
+struct Diagonal \{\
+    var height: Double = 0\
+    var width :Double = 0\
+    \
+    var diagonal : Int \{\
+        get \{\
+            let result = sqrt(height * height + width * width)\
+            return Int(result.rounded())\
+        \}\
+        set \{\
+            width = Double(newValue)\
+        \}\
+    \}\
+    var heightSq : Double \{\
+        return height * height\
+    \}\
+\}\
+var diagonal1 = Diagonal(height: 53.9, width: 95.87)\
+ */\cf0  \cf2 /*\
+print(diagonal1.diagonal)//property nin get b\'f6l\'fcm\'fc \'e7al\uc0\u305 \u351 t\u305 \
+diagonal1.diagonal = 10 //property nin set b\'f6l\'fcm\'fc \'e7al\uc0\u305 \u351 t\u305 r ve 10 de\u287 eri newValue'a atand\u305 \
+diagonal1.width\
+\
+//static veriable\
+struct LightBulb \{\
+    static let maxCurrent = 40\
+    var name = "Spot Light"\
+\}\
+print(LightBulb.maxCurrent)\
+\
+//////////////31.05.2017\
+//property observers\
+\
+struct Level \{\
+    static var highesLevel = 1\
+    let id: Int\
+    var boss: String\
+    var unlocked : Bool \{\
+        willSet \{\
+            print("willSet and id:\\(id)")\
+        \}\
+        didSet \{\
+            if unlocked && id > Level.highesLevel \{\
+                print("didSet and id:\\(id)")\
+                Level.highesLevel = id\
+                print(oldValue)\
+            \}\
+        \}\
+    \}\
+    \
+\}\
+var bolum1 = Level(id: 2, boss: "B\'f6l\'fcm1", unlocked: false)//property observers not working\
+bolum1.unlocked = true\
+\
+\
+//lazy property bak\uc0\u305 lacak\
+\
+struct myPerson \{\
+    var age = 16\
+    \
+    lazy var fibonacciAge : Int = \{\
+        return fibonacci(self.age)\
+    \}()\
+\}\
+var myPerson1 = myPerson()\
+print(myPerson.init(age: 15, fibonacciAge: 15))\
+\
+\
+//methods samples\
+let months = ["Ocak", "\uc0\u350 ubat", "Mart", "Nisan", "May\u305 s", "Haziran", "Temmuz", "A\u287 ustos", "Eyl\'fcl", "Ekim", "Kas\u305 m", "Aral\u305 k"]\
+//init methods\
+struct SimpleDate \{\
+    var month: String\
+    var day: Int = 0\
+    \
+    init() \{\
+        month = ""\
+    \}\
+    init(_ month : String) \{\
+        self.month = month\
+    \}\
+    func monthsUntil(from date: SimpleDate) -> Int \{\
+        return months.index(of: "Aral\uc0\u305 k")! - months.index(of: date.month)! //self.month\
+    \}\
+    //mutating in methods\
+    mutating func advance()\
+    \{\
+        day += 1\
+        print("day: \\(day)")\
+    \}\
+\}\
+var date = SimpleDate("Ocak")\
+let monthsLeft = date.monthsUntil(from: date)\
+date.advance()\
+date.advance()\
+\
+//static in methods \
+\
+struct Math \{\
+    var m_number : Int = 0\
+    static func factorial(of number: Int) ->Int \{\
+        return (1...number).reduce(1) \{\
+            return $0 * $1\
+            \
+        \}\
+    \}\
+\}\
+let factorial = Math.factorial(of: 3)\
+\
+\
+extension SimpleDate \{\
+    init(from day: Int) \{\
+        self.day = day\
+        self.month = ""\
+    \}\
+\}\
+\
+let simpleDate2 = SimpleDate(from: 1)\
+\
+//s\uc0\u305 n\u305 flar\
+\
+\
+class PersonClass \{\
+    var firstName: String\
+    var lastNAme: String\
+    \
+    init() \{\
+        self.firstName = ""\
+        self.lastNAme = ""\
+    \}\
+\}\
+\
+struct StudentNote \{\
+    let name : String\
+    let note : Int\
+\}\
+\
+class FirstStudentClass \{\
+    var m_firstName : String\
+    var m_lastName : String\
+    var m_notes : [StudentNote]\
+    \
+    init() \{\
+        self.m_firstName = ""\
+        self.m_lastName = ""\
+        self.m_notes = []\
+    \}\
+    var firstName : String  \{\
+        get \{\
+            return self.m_firstName\
+        \}\
+        set \{\
+            self.m_firstName = newValue\
+        \}\
+    \}\
+    var LastName : String  \{\
+        get \{\
+            return self.m_lastName\
+        \}\
+        set \{\
+            self.m_lastName = newValue\
+        \}\
+    \}\
+    func addNote(_ note: StudentNote) \{\
+        self.m_notes.append(note)\
+    \}\
+    func printNotes() \{\
+        for item in m_notes \{\
+            print("\\(item.name) - \\(item.note)")\
+        \}\
+    \}\
+    func avgNotes()->(Double, Int) \{\
+        var avg : Double = 0\
+        for item in m_notes \{\
+            avg += Double(item.note)\
+        \}\
+        avg = avg / Double(m_notes.count)\
+        \
+        return (avg, m_notes.count)\
+    \}\
+\}\
+var myStd1 = FirstStudentClass()\
+myStd1.firstName = "Yunus"\
+myStd1.LastName = "Y\uc0\u305 lmaz"\
+var myStdNote = StudentNote(name: "Matematik", note: 80)\
+myStd1.addNote(myStdNote)\
+var myStd2 = myStd1\
+print(myStd2.firstName)\
+myStd1.printNotes()\
+myStd1.addNote(StudentNote(name: "Fizik", note: 50))\
+let resultAvg = myStd1.avgNotes()\
+print("\\(resultAvg.0), \\(resultAvg.1)")\
+var myStd3 = FirstStudentClass()\
+//s\uc0\u305 n\u305 flar i\'e7in kar\u351 \u305 la\u351 t\u305 rma operatorleri\
+print(myStd1 === myStd2)\
+print(myStd1 === myStd3)\
+*/\cf0 \
+\cf2 /*\
+//inheritance (kal\uc0\u305 t\u305 m)\
+struct Weapons \{\
+    let weaponName : String\
+    let weaponPower : Int\
+    \
+    init() \{\
+        weaponName = ""\
+        weaponPower = 0\
+    \}\
+\}\
+class Human \{\
+    var firstName : String\
+    var lastName : String\
+    var age : Int\
+    \
+    init() \{\
+        self.firstName = ""\
+        self.lastName = ""\
+        self.age = 0\
+        print("ben human")\
+    \}\
+    init(_ firstName: String, _ lastName:String, _ age:Int) \{\
+        self.firstName = firstName\
+        self.lastName = lastName\
+        self.age = age\
+    \}\
+\}\
+class Soldier : Human \{\
+    var m_weapons : [Weapons] = []\
+    \
+    override init() \{\
+        print("ben soldier")\
+        super.init()\
+    \}\
+    \
+    func addWeapon(_ weapon : Weapons) \{\
+        m_weapons.append(weapon)\
+    \}\
+    func getFullName()->(String, String) \{\
+        return (self.firstName, self.lastName)\
+    \}\
+    func setFullName(_ name:String, lName:String)\{\
+        self.firstName = name\
+        self.lastName = lName\
+    \}\
+\}\
+var soldier1 = Soldier()\
+print(soldier1.getFullName().0)\
+\
+//07.06.2017\
+//s\uc0\u305 n\u305 flara devam\
+\
+//extensions keyword - (yap\uc0\u305 larda da vard\u305 )\
+\
+extension Human \{\
+    var fullName : String \{\
+        return ("\\(self.firstName) \\(self.lastName)")\
+    \}\
+\}\
+\
+let humanSample = Human()\
+humanSample.fullName\
+\
+//polymorphism (\'e7ok bi\'e7imlilik)\
+struct Grades \{\
+    let letter : String\
+    let points : String\
+    let credits : String\
+\}\
+\
+class Person \{\
+    var firstName : String\
+    var lastName : String\
+    \
+    init(firstname: String, lastname: String) \{\
+        self.firstName = firstname\
+        self.lastName = lastname\
+    \}\
+   \
+\}\
+class Student : Person \{\
+    var grades:[Grades] = []\
+    \
+    func recordGrade(_ grade : Grades) \{\
+        grades.append(grade)\
+    \}\
+\}\
+class BandMember : Student \{\
+    var minimumPracticeTime = 2\
+\}\
+class OboePlayer : BandMember \{\
+    override var minimumPracticeTime: Int \{\
+        get \{\
+            return super.minimumPracticeTime * 2\
+        \}\
+        set \{\
+            super.minimumPracticeTime = newValue / 2\
+        \}\
+    \}\
+    \
+\}\
+func phoneBookName(_ person: Person) -> String \{\
+    return "\\(person.firstName) - \\(person.lastName)"\
+\}\
+\
+let person1 = Person(firstname: "Ali", lastname: "\uc0\u350 en")\
+var oboePlayer = OboePlayer(firstname: "Kamil", lastname: "isimsiz")\
+phoneBookName(person1)\
+phoneBookName(oboePlayer)\
+var student1 = Student(firstname: "Jane", lastname: "Banapel")\
+\
+if let student2 = student1 as? BandMember \{ //guard\
+    \
+\}\
+/*\
+    as : superType casting\
+    as? : subClass cast (nil or subclass)\
+    as! : subClass force cast (exception)\
+ */\
+func afterClassActivity(for student: Student) -> String \{\
+    return "Go home"\
+\}\
+func afterClassActivity(for student: BandMember) -> String \{\
+    return "Go to practice"\
+\}\
+afterClassActivity(for: oboePlayer)\
+afterClassActivity(for: oboePlayer as Student)\
+*/\cf0 \
+\cf2 //12.05.2017\
+//required anahtar s\'f6zc\'fc\uc0\u287 \'fc\
+\cf0 \
+\cf3 struct\cf0  notes \{\
+    \cf3 var\cf0  name : \cf4 String\cf0 \
+    \cf3 var\cf0  note : \cf4 Int\cf0 \
+    \
+    \cf3 init\cf0 () \{\
+        \cf5 name\cf0  = \cf6 ""\cf0 \
+        \cf5 note\cf0  = \cf7 0\cf0 \
+    \}\
+\}\
+\
+\cf3 class\cf0  Student \{\
+    \cf3 let\cf0  firstName: \cf4 String\cf0 \
+    \cf3 let\cf0  lastName: \cf4 String\cf0 \
+    \cf3 var\cf0  myNotes:[\cf5 notes\cf0 ] = []\
+    \
+    \cf3 required\cf0  \cf3 init\cf0 (firstName: \cf4 String\cf0 , lastName: \cf4 String\cf0 ) \{\
+        \cf3 self\cf0 .\cf5 firstName\cf0  = firstName\
+        \cf3 self\cf0 .\cf5 lastName\cf0  = lastName\
+    \}\
+    \cf3 convenience\cf0  \cf3 init\cf0 ()\
+    \{\
+        \cf3 self\cf0 .\cf3 init\cf0 (firstName: \cf6 ""\cf0 , lastName: \cf6 ""\cf0 )\
+    \}\
+\
+\}\
+\cf3 class\cf0  StudentAthlete : \cf5 Student\cf0  \{\
+    \cf3 required\cf0  \cf3 init\cf0 (firstName: \cf4 String\cf0 , lastName: \cf4 String\cf0 ) \{\
+        \cf3 super\cf0 .\cf3 init\cf0 (firstName: firstName, lastName: lastName)\
+    \}\
+    \cf3 convenience\cf0  \cf3 init\cf0 ()\
+    \{\
+        \cf3 self\cf0 .\cf3 init\cf0 (firstName: \cf6 ""\cf0 , lastName: \cf6 ""\cf0 )\
+    \}\
+\}\
+\cf3 var\cf0  stdAt = \cf5 StudentAthlete\cf0 ()\
+\cf2 // shared Base Class\
+/*\
+class Button \{\
+    func press()\{\
+        \
+    \}\
+\}\
+class ImageButton : Button \{\
+    var Image : UIImage\
+\}\
+class TextButton : Button \{\
+    var Text : String\
+\}\
+\
+ */\cf0 \
+\cf2 //garbage collector\
+//ARC (automatic referance counting)\
+//de init\
+\cf3 class\cf0  Person \{\
+    \cf3 let\cf0  firstName: \cf4 String\cf0 \
+    \cf3 let\cf0  lastName :\cf4 String\cf0 \
+    \
+    \cf3 init\cf0 () \{\
+        \cf3 self\cf0 .\cf5 firstName\cf0  = \cf6 ""\cf0 \
+        \cf3 self\cf0 .\cf5 lastName\cf0  = \cf6 ""\cf0 \
+    \}\
+    \cf3 deinit\cf0  \{\
+        \cf8 print\cf0 (\cf6 "geldikkk gidiyoruzz..."\cf0 )\
+    \}\
+\}\
+\
+\cf3 var\cf0  p1: \cf5 Person\cf0 ? = \cf5 Person\cf0 ()\
+\cf2 //ARC: 1\
+\cf3 var\cf0  p2 = \cf5 p1\cf0 \
+\cf2 //ARC: 2\
+\cf0 \
+\cf5 p1\cf0  = \cf3 nil\cf0 \
+\cf2 //ARC:1\
+\cf5 p2\cf0  = \cf3 nil\cf0 \
+\cf2 //ARC: 0\
+\cf0 \
+\cf2 //enumerations\
+\cf0 \
+\
+\cf3 enum\cf0  Months \{\
+    \cf3 case\cf0  Jan\
+    \cf3 case\cf0  Feb\
+    \cf3 case\cf0  Mar\
+    \cf3 case\cf0  Apr\
+    \cf3 case\cf0  May\
+    \cf3 case\cf0  Jun\
+    \cf3 case\cf0  Jul\
+    \cf3 case\cf0  Aug\
+    \cf3 case\cf0  Sep\
+    \cf3 case\cf0  Oct\
+    \cf3 case\cf0  Nov\
+    \cf3 case\cf0  Dec\
+\}\
+\cf2 //raw Value\
+\cf3 enum\cf0  Months2 : \cf4 Int\cf0  \{\
+    \cf3 case\cf0  Jan = \cf7 1\cf0 , Feb = \cf7 2\cf0 , Mar = \cf7 3\cf0 , Apr = \cf7 4\cf0 , May = \cf7 5\cf0 , Jun = \cf7 6\cf0 , Jul = \cf7 7\cf0 , Aug = \cf7 8\cf0 , Sep = \cf7 9\cf0 , Oct = \cf7 10\cf0 , Nov = \cf7 11\cf0 , Dec = \cf7 12\cf0 \
+\}\
+\
+\cf3 func\cf0  semester(for month:\cf5 Months\cf0 )->\cf4 String\cf0  \{\
+    \cf3 switch\cf0  month \{\
+    \cf3 case\cf0  Months.\cf9 Aug\cf0 , Months.\cf9 Sep\cf0 , Months.\cf9 Oct\cf0 , Months.\cf9 Nov\cf0 , Months.\cf9 Dec\cf0 :\
+        \cf3 return\cf0  \cf6 "Autumn"\cf0 \
+    \cf3 case\cf0  .\cf9 Jan\cf0 , Months.\cf9 Feb\cf0 , Months.\cf9 Mar\cf0 , Months.\cf9 Apr\cf0 , Months.\cf9 May\cf0 :\
+        \cf3 return\cf0  \cf6 "Spring"\cf0 \
+    \cf3 default\cf0 :\
+        \cf3 return\cf0  \cf6 "Not in the school year"\cf0 \
+    \}\
+\}\
+\cf3 var\cf0  m = \cf5 Months\cf0 .\cf9 Feb\cf0 \
+\cf8 print\cf0 (\cf9 semester\cf0 (for: \cf5 m\cf0 ))\
+\
+\cf3 func\cf0  monthsUntilWinterBreak(from month:\cf5 Months2\cf0 )->\cf4 Int\cf0  \{\
+    \cf3 return\cf0  \cf5 Months2\cf0 .\cf9 Dec\cf0 .\cf5 rawValue\cf0  - month.\cf5 rawValue\cf0 \
+\}\
+\cf3 var\cf0  m2 = \cf5 Months2\cf0 .\cf9 Aug\cf0 \
+\cf8 print\cf0 (\cf9 monthsUntilWinterBreak\cf0 (from: \cf5 m2\cf0 ))\
+\
+\
+\cf3 let\cf0  fifthMonth = \cf5 Months2\cf0 (rawValue: \cf7 5\cf0 )!\
+\cf9 monthsUntilWinterBreak\cf0 (from: \cf5 fifthMonth\cf0 )\
+\
+\cf2 //sample\
+\cf0 \
+\cf3 enum\cf0  icon : \cf4 String\cf0  \{\
+    \cf3 case\cf0  music\
+    \cf3 case\cf0  sports\
+    \cf3 case\cf0  weather\
+    \
+    \cf3 var\cf0  fileName: \cf4 String\cf0  \{\
+        \cf3 return\cf0  \cf6 "\cf0 \\\cf6 (\cf5 rawValue\cf0 .\cf4 capitalized\cf6 ).png"\cf0 \
+    \}\
+\}\
+\cf3 let\cf0  myIcon = \cf5 icon\cf0 .\cf9 weather\cf0 \
+\cf8 print\cf0 (\cf5 myIcon\cf0 .\cf5 fileName\cf0 )\
+\
+\cf2 //ordered\
+\cf3 enum\cf0  numberString : \cf4 Int\cf0  \{\
+    \cf3 case\cf0  one = \cf7 1\cf0 , two, three, four, five\
+\}\
+\cf3 let\cf0  number = \cf5 numberString\cf0 .\cf9 five\cf0 .\cf5 rawValue\cf0 \
+\
+\cf2 //Unordered\
+\cf3 enum\cf0  Coin : \cf4 Int\cf0  \{\
+    \cf3 case\cf0  nickel = \cf7 5\cf0 \
+    \cf3 case\cf0  dime = \cf7 10\cf0 \
+    \cf3 case\cf0  quarter = \cf7 25\cf0 \
+\}\
+\cf2 //state machine with enum\
+\cf0 \
+\cf3 let\cf0  age : \cf4 Int\cf0 ? = \cf3 nil\cf0 \
+\
+\cf3 switch\cf0  \cf5 age\cf0  \{\
+\cf3 case\cf0  .\cf8 none\cf0 :\
+    \cf8 print\cf0 (\cf6 "nil"\cf0 )\
+\cf3 case\cf0  .\cf8 some\cf0 (let value):\
+    \cf8 print\cf0 (value)\
+\}\
+\cf5 age\cf0  == .\cf8 none\cf0 \
+\cf5 age\cf0  == \cf3 nil\cf0 \
+\
+\cf2 //final\
+\cf0 \
+\cf3 final\cf0  \cf3 class\cf0  Sample : \cf5 Student\cf0  \{\
+    \cf2 //..\
+\cf0 \}\
+\
+\cf3 class\cf0  SampleStudent \{\
+    \cf3 var\cf0  myCoins: [\cf5 Coin\cf0 ] = []\
+\
+    \cf3 func\cf0  harcama(\cf3 _\cf0  coin : \cf4 Int\cf0 )-> (\cf4 Bool\cf0 , \cf4 String\cf0 ) \{\
+        \cf3 var\cf0  bitCoin = \cf7 0\cf0 \
+        \cf3 if\cf0  coin != \cf7 0\cf0  \{\
+            bitCoin = coin / \cf7 40\cf0 \
+        \}\
+        \cf3 else\cf0 \
+        \{\
+            \cf3 return\cf0  (\cf3 false\cf0 , \cf6 "Arg\'fcman 0 olamaz"\cf0 )\
+        \}\
+        \cf3 if\cf0  \cf5 myCoins\cf0 .\cf4 count\cf0  >= bitCoin \{\
+            \cf3 while\cf0  bitCoin != \cf7 0\cf0  \{\
+                \cf5 myCoins\cf0 .\cf8 remove\cf0 (at: \cf5 myCoins\cf0 .\cf4 count\cf0  - \cf7 1\cf0 )\
+                bitCoin = bitCoin - \cf7 1\cf0 \
+            \}\
+        \}\
+        \cf3 else\cf0  \{\
+            \cf3 return\cf0  (\cf3 false\cf0 , \cf6 "C\'fczdan\uc0\u305 mda Yeterli Param Yok"\cf0 )\
+        \}\
+        \cf3 return\cf0  (\cf3 true\cf0 , \cf6 "Harcama ba\uc0\u351 ar\u305 yla yap\u305 ld\u305 ."\cf0 )\
+    \}\
+    \cf3 func\cf0  paraEkleme(\cf3 _\cf0  coin : \cf4 Int\cf0 )->\cf4 Bool\cf0  \{\
+        \cf3 var\cf0  bitCoin = \cf7 0\cf0 \
+        \cf3 if\cf0  coin != \cf7 0\cf0  \{\
+            bitCoin = coin / \cf7 40\cf0 \
+        \}\
+        \cf3 else\cf0 \
+        \{\
+            \cf3 return\cf0  \cf3 false\cf0 \
+        \}\
+        \cf3 while\cf0  bitCoin != \cf7 0\cf0  \{\
+            \cf3 let\cf0  myCoin = \cf5 Coin\cf0 (rawValue:\cf7 5\cf0 )\
+            \cf5 myCoins\cf0 .\cf8 append\cf0 (myCoin!)\
+            bitCoin -= \cf7 1\cf0 \
+        \}\
+        \cf3 return\cf0  \cf3 true\cf0 \
+    \}\
+    \
+\}\
+\cf2 //protocols\
+\cf0 \
+\cf3 protocol\cf0  Vehicle \{\
+    \cf3 func\cf0  start()\
+    \cf3 func\cf0  stop()\
+    \cf3 func\cf0  accelerate()\
+\}\
+\
+\cf2 //let myVehicle = Vehicle() amac\uc0\u305  nesne olu\u351 turmak de\u287 il\
+\cf0 \
+\cf3 enum\cf0  Direction \{\
+    \cf3 case\cf0  left\
+    \cf3 case\cf0  right\
+\}\
+\
+\cf3 protocol\cf0  DirectionalVehicle \{\
+    \cf3 func\cf0  turn()\
+    \cf3 func\cf0  turn(direction:\cf5 Direction\cf0 )\
+\}\
+\cf3 protocol\cf0  VehicleProperties \{\
+    \cf3 var\cf0  weight:\cf4 Int\cf0  \{\cf3 get\cf0 \}\
+    \cf3 var\cf0  name: \cf4 String\cf0  \{\cf3 get\cf0  \cf3 set\cf0 \}\
+\}\
+\
+\cf3 class\cf0  BMW : \cf5 Vehicle\cf0 , \cf5 DirectionalVehicle\cf0 , \cf5 VehicleProperties\cf0  \{\
+    \cf3 var\cf0  weight:\cf4 Int\cf0  \{\
+        \cf3 get\cf0  \{\
+            \cf3 return\cf0  \cf7 22\cf0 \
+        \}\
+    \
+    \}\
+    \cf3 var\cf0  name: \cf4 String\cf0  \{\
+        \cf3 get\cf0  \{\
+           \cf3 return\cf0  \cf6 "name"\cf0 \
+        \}\
+        \cf3 set\cf0  \{\
+            \cf8 print\cf0 (newValue)\
+        \}\
+    \}\
+    \cf2 //Vehicle protocols methods\
+\cf0     \cf3 func\cf0  start() \{\
+        \cf8 print\cf0 (\cf6 "start"\cf0 )\
+    \}\
+    \cf3 func\cf0  stop()\{\
+        \cf8 print\cf0 (\cf6 "stop"\cf0 )\
+    \}\
+    \
+    \cf3 func\cf0  accelerate()\{\
+        \cf8 print\cf0 (\cf6 "accelerate"\cf0 )\
+    \}\
+    \
+    \cf2 //DirectionalVehicle protocols methods\
+\cf0     \cf3 func\cf0  turn() \{\
+        \cf8 print\cf0 (\cf6 "turn"\cf0 )\
+    \}\
+    \cf3 func\cf0  turn(direction:\cf5 Direction\cf0 ) \{\
+        \cf8 print\cf0 (\cf6 "turn direction"\cf0 )\
+    \}\
+\
+\}\
+\cf2 //protocols init\
+\cf0 \
+\cf3 protocol\cf0  Account \{\
+    \cf3 var\cf0  value : \cf4 Double\cf0  \{\cf3 get\cf0  \cf3 set\cf0 \}\
+    \cf3 init\cf0 (initialAmount: \cf4 Double\cf0 )\
+    \cf3 init\cf0 ?(transferAcount: \cf5 Account\cf0 )\
+\}\
+\cf3 class\cf0  BitcoinAccount: \cf5 Account\cf0  \{\
+    \cf3 var\cf0  value: \cf4 Double\cf0 \
+    \cf3 required\cf0  \cf3 init\cf0 (initialAmount: \cf4 Double\cf0 ) \{\
+        \cf5 value\cf0  = initialAmount\
+    \}\
+    \cf3 required\cf0  \cf3 init\cf0 ?(transferAcount: \cf5 Account\cf0 ) \{\
+        \cf3 guard\cf0  transferAcount.\cf5 value\cf0  > \cf7 0.0\cf0  \cf3 else\cf0  \{\
+            \cf3 return\cf0  \cf3 nil\cf0 \
+        \}\
+        \cf5 value\cf0  = transferAcount.\cf5 value\cf0 \
+    \}\
+\}\
+\cf3 var\cf0  accountType : \cf5 Account\cf0 .Type = \cf5 BitcoinAccount\cf0 .\cf3 self\cf0 \
+\
+\cf3 let\cf0  account = \cf5 accountType\cf0 .\cf3 init\cf0 (initialAmount: \cf7 30.00\cf0 )\
+\
+\cf2 //14.06.2017\
+//protocol inheritance\
+\cf3 protocol\cf0  WheeledVehicle: \cf5 Vehicle\cf0  \{\
+    \cf3 var\cf0  numberOfWheels : \cf4 Int\cf0  \{ \cf3 get\cf0  \}\
+    \cf3 var\cf0  wheelSize : \cf4 Double\cf0  \{\cf3 get\cf0  \cf3 set\cf0 \}\
+\}\
+\cf3 class\cf0  Sample2 : \cf5 WheeledVehicle\cf0  \{\
+    \cf3 var\cf0  numberOfWheels: \cf4 Int\cf0 \
+    \cf3 var\cf0  wheelSize: \cf4 Double\cf0 \
+    \
+    \cf3 func\cf0  start() \{\
+        \
+    \}\
+    \cf3 func\cf0  stop() \{\
+        \
+    \}\
+    \cf3 func\cf0  accelerate()\{\
+        \
+    \}\
+    \cf3 init\cf0 () \{\
+        \cf5 numberOfWheels\cf0  = \cf7 1\cf0 \
+        \cf5 wheelSize\cf0  = \cf7 1.0\cf0 \
+    \}\
+\}\
+\cf2 ///Associated types in protocol\
+\cf3 protocol\cf0  WeightCalculate \{\
+    \cf3 associatedtype\cf0  WeightType\
+    \cf3 func\cf0  calculateWeight()->WeightType\
+\}\
+\cf3 class\cf0  Sample3 : \cf5 WeightCalculate\cf0  \{\
+    \cf3 typealias\cf0  WeightType = \cf4 Int\cf0 \
+    \cf3 func\cf0  calculateWeight()->\cf5 WeightType\cf0  \{\
+        \cf3 return\cf0  \cf7 100\cf0 \
+    \}\
+\}\
+\cf3 class\cf0  Sample4 : \cf5 WeightCalculate\cf0  \{\
+    \cf3 typealias\cf0  WeightType = \cf4 Double\cf0 \
+    \cf3 func\cf0  calculateWeight()->\cf5 WeightType\cf0  \{\
+        \cf3 return\cf0  \cf7 11.2\cf0 \
+    \}\
+\}\
+\
+\cf2 //Protocols in Standart Library\
+\cf0 \
+\
+\cf2 //Equatable\
+\cf0 \
+\cf3 let\cf0  a = \cf7 5\cf0 \
+\cf3 let\cf0  b = \cf7 3\cf0 \
+\
+\cf5 a\cf0  == \cf5 b\cf0 \
+\
+\cf3 struct\cf0  Record \{\
+    \cf3 var\cf0  wins : \cf4 Int\cf0 \
+    \cf3 var\cf0  losses : \cf4 Int\cf0 \
+\}\
+\cf3 let\cf0  recordA = \cf5 Record\cf0 (wins: \cf7 4\cf0 , losses: \cf7 1\cf0 )\
+\cf3 let\cf0  recordB = \cf5 Record\cf0 (wins: \cf7 2\cf0 , losses: \cf7 4\cf0 )\
+\
+\cf2 //recordA == recordB\
+\cf3 protocol\cf0  myEquatable \{\
+    \cf3 static\cf0  \cf3 func\cf0  ==(lhs: \cf5 Self\cf0 , rhs:\cf5 Self\cf0 ) ->\cf4 Bool\cf0 \
+\}\
+\
+\cf3 extension\cf0  \cf5 Record\cf0  : \cf4 Equatable\cf0  \{\
+    \cf3 static\cf0  \cf3 func\cf0  ==(lhs: \cf5 Record\cf0 , rhs: \cf5 Record\cf0 ) ->\cf4 Bool\cf0  \{\
+        \cf3 return\cf0  lhs.\cf5 wins\cf0  == rhs.\cf5 wins\cf0  \cf8 &&\cf0  lhs.\cf5 losses\cf0  == rhs.\cf5 losses\cf0 \
+    \}\
+    \
+\}\
+}
