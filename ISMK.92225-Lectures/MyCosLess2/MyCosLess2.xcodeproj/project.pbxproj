@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D515F0691EF7A8BE00518B30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515F0681EF7A8BE00518B30 /* AppDelegate.swift */; };
+		D515F06B1EF7A8BE00518B30 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515F06A1EF7A8BE00518B30 /* ViewController.swift */; };
+		D515F06E1EF7A8BE00518B30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D515F06C1EF7A8BE00518B30 /* Main.storyboard */; };
+		D515F0701EF7A8BE00518B30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D515F06F1EF7A8BE00518B30 /* Images.xcassets */; };
+		D515F0731EF7A8BE00518B30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D515F0711EF7A8BE00518B30 /* LaunchScreen.xib */; };
+		D515F07F1EF7A8BF00518B30 /* MyCosLess2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D515F07E1EF7A8BF00518B30 /* MyCosLess2Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D515F0791EF7A8BF00518B30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D515F05B1EF7A8BE00518B30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D515F0621EF7A8BE00518B30;
+			remoteInfo = MyCosLess2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D515F0631EF7A8BE00518B30 /* MyCosLess2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCosLess2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D515F0671EF7A8BE00518B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D515F0681EF7A8BE00518B30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D515F06A1EF7A8BE00518B30 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D515F06D1EF7A8BE00518B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D515F06F1EF7A8BE00518B30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D515F0721EF7A8BE00518B30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D515F0781EF7A8BF00518B30 /* MyCosLess2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyCosLess2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D515F07D1EF7A8BF00518B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D515F07E1EF7A8BF00518B30 /* MyCosLess2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCosLess2Tests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D515F0601EF7A8BE00518B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D515F0751EF7A8BF00518B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D515F05A1EF7A8BE00518B30 = {
+			isa = PBXGroup;
+			children = (
+				D515F0651EF7A8BE00518B30 /* MyCosLess2 */,
+				D515F07B1EF7A8BF00518B30 /* MyCosLess2Tests */,
+				D515F0641EF7A8BE00518B30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D515F0641EF7A8BE00518B30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D515F0631EF7A8BE00518B30 /* MyCosLess2.app */,
+				D515F0781EF7A8BF00518B30 /* MyCosLess2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D515F0651EF7A8BE00518B30 /* MyCosLess2 */ = {
+			isa = PBXGroup;
+			children = (
+				D515F0681EF7A8BE00518B30 /* AppDelegate.swift */,
+				D515F06A1EF7A8BE00518B30 /* ViewController.swift */,
+				D515F06C1EF7A8BE00518B30 /* Main.storyboard */,
+				D515F06F1EF7A8BE00518B30 /* Images.xcassets */,
+				D515F0711EF7A8BE00518B30 /* LaunchScreen.xib */,
+				D515F0661EF7A8BE00518B30 /* Supporting Files */,
+			);
+			path = MyCosLess2;
+			sourceTree = "<group>";
+		};
+		D515F0661EF7A8BE00518B30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D515F0671EF7A8BE00518B30 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D515F07B1EF7A8BF00518B30 /* MyCosLess2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D515F07E1EF7A8BF00518B30 /* MyCosLess2Tests.swift */,
+				D515F07C1EF7A8BF00518B30 /* Supporting Files */,
+			);
+			path = MyCosLess2Tests;
+			sourceTree = "<group>";
+		};
+		D515F07C1EF7A8BF00518B30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D515F07D1EF7A8BF00518B30 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D515F0621EF7A8BE00518B30 /* MyCosLess2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D515F0821EF7A8BF00518B30 /* Build configuration list for PBXNativeTarget "MyCosLess2" */;
+			buildPhases = (
+				D515F05F1EF7A8BE00518B30 /* Sources */,
+				D515F0601EF7A8BE00518B30 /* Frameworks */,
+				D515F0611EF7A8BE00518B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyCosLess2;
+			productName = MyCosLess2;
+			productReference = D515F0631EF7A8BE00518B30 /* MyCosLess2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D515F0771EF7A8BF00518B30 /* MyCosLess2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D515F0851EF7A8BF00518B30 /* Build configuration list for PBXNativeTarget "MyCosLess2Tests" */;
+			buildPhases = (
+				D515F0741EF7A8BF00518B30 /* Sources */,
+				D515F0751EF7A8BF00518B30 /* Frameworks */,
+				D515F0761EF7A8BF00518B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D515F07A1EF7A8BF00518B30 /* PBXTargetDependency */,
+			);
+			name = MyCosLess2Tests;
+			productName = MyCosLess2Tests;
+			productReference = D515F0781EF7A8BF00518B30 /* MyCosLess2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D515F05B1EF7A8BE00518B30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = coskun;
+				TargetAttributes = {
+					D515F0621EF7A8BE00518B30 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					D515F0771EF7A8BF00518B30 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = D515F0621EF7A8BE00518B30;
+					};
+				};
+			};
+			buildConfigurationList = D515F05E1EF7A8BE00518B30 /* Build configuration list for PBXProject "MyCosLess2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D515F05A1EF7A8BE00518B30;
+			productRefGroup = D515F0641EF7A8BE00518B30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D515F0621EF7A8BE00518B30 /* MyCosLess2 */,
+				D515F0771EF7A8BF00518B30 /* MyCosLess2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D515F0611EF7A8BE00518B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D515F06E1EF7A8BE00518B30 /* Main.storyboard in Resources */,
+				D515F0731EF7A8BE00518B30 /* LaunchScreen.xib in Resources */,
+				D515F0701EF7A8BE00518B30 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D515F0761EF7A8BF00518B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D515F05F1EF7A8BE00518B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D515F06B1EF7A8BE00518B30 /* ViewController.swift in Sources */,
+				D515F0691EF7A8BE00518B30 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D515F0741EF7A8BF00518B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D515F07F1EF7A8BF00518B30 /* MyCosLess2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D515F07A1EF7A8BF00518B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D515F0621EF7A8BE00518B30 /* MyCosLess2 */;
+			targetProxy = D515F0791EF7A8BF00518B30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D515F06C1EF7A8BE00518B30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D515F06D1EF7A8BE00518B30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D515F0711EF7A8BE00518B30 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D515F0721EF7A8BE00518B30 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D515F0801EF7A8BF00518B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D515F0811EF7A8BF00518B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D515F0831EF7A8BF00518B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyCosLess2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D515F0841EF7A8BF00518B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MyCosLess2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D515F0861EF7A8BF00518B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyCosLess2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCosLess2.app/MyCosLess2";
+			};
+			name = Debug;
+		};
+		D515F0871EF7A8BF00518B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MyCosLess2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyCosLess2.app/MyCosLess2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D515F05E1EF7A8BE00518B30 /* Build configuration list for PBXProject "MyCosLess2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D515F0801EF7A8BF00518B30 /* Debug */,
+				D515F0811EF7A8BF00518B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D515F0821EF7A8BF00518B30 /* Build configuration list for PBXNativeTarget "MyCosLess2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D515F0831EF7A8BF00518B30 /* Debug */,
+				D515F0841EF7A8BF00518B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D515F0851EF7A8BF00518B30 /* Build configuration list for PBXNativeTarget "MyCosLess2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D515F0861EF7A8BF00518B30 /* Debug */,
+				D515F0871EF7A8BF00518B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D515F05B1EF7A8BE00518B30 /* Project object */;
+}
