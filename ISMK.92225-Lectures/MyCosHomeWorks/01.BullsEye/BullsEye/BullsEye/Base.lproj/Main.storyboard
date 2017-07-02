@@ -60,18 +60,35 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Skore: 1884" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-qa-n4e">
+                                <rect key="frame" x="66" y="530" width="406" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round: 27" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDB-wa-AH4">
+                                <rect key="frame" x="480" y="530" width="58" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xDL-pr-pZX" secondAttribute="bottom" constant="20" id="0K9-65-0VR"/>
                             <constraint firstAttribute="centerY" secondItem="Fk3-U6-7Hs" secondAttribute="centerY" id="4gx-cH-ZKw"/>
                             <constraint firstItem="Fk3-U6-7Hs" firstAttribute="centerX" secondItem="0PB-MO-Um8" secondAttribute="centerX" id="7ch-OG-rqe"/>
+                            <constraint firstItem="oEZ-qa-n4e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="BQL-4g-8zi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xDL-pr-pZX" secondAttribute="trailing" constant="50" id="Cfr-zd-d2n"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xDB-wa-AH4" secondAttribute="trailing" constant="46" id="EsN-aB-ylS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4zQ-FN-LNK" secondAttribute="trailing" constant="46" id="HsA-PM-LnJ"/>
+                            <constraint firstItem="xDL-pr-pZX" firstAttribute="top" secondItem="xDB-wa-AH4" secondAttribute="bottom" constant="13" id="K6d-PR-98g"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="top" secondItem="4zQ-FN-LNK" secondAttribute="bottom" constant="16" id="MBp-L0-90f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0PB-MO-Um8" secondAttribute="trailing" constant="46" id="Mmc-1I-dQz"/>
                             <constraint firstItem="4zQ-FN-LNK" firstAttribute="centerX" secondItem="Fk3-U6-7Hs" secondAttribute="centerX" id="NTz-HJ-2qF"/>
+                            <constraint firstItem="Mhm-5v-4rH" firstAttribute="top" secondItem="oEZ-qa-n4e" secondAttribute="bottom" constant="8" id="R3Y-qT-Pez"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mhm-5v-4rH" secondAttribute="bottom" constant="20" id="RVV-IP-4Mt"/>
+                            <constraint firstItem="xDB-wa-AH4" firstAttribute="leading" secondItem="oEZ-qa-n4e" secondAttribute="trailing" constant="8" id="Rgs-EG-nMF"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="leading" secondItem="5ng-Nb-9mg" secondAttribute="trailing" constant="8" id="UbZ-Oi-Cyw"/>
                             <constraint firstItem="MXb-XY-3Dc" firstAttribute="leading" secondItem="0PB-MO-Um8" secondAttribute="trailing" constant="8" id="V6P-tx-JTY"/>
                             <constraint firstItem="4zQ-FN-LNK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="WyR-pO-DKe"/>
