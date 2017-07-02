@@ -35,6 +35,18 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXb-XY-3Dc">
+                                <rect key="frame" x="546" y="251" width="29" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ng-Nb-9mg">
+                                <rect key="frame" x="44" y="251" width="10" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -44,9 +56,13 @@
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="top" secondItem="4zQ-FN-LNK" secondAttribute="bottom" constant="16" id="MBp-L0-90f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0PB-MO-Um8" secondAttribute="trailing" constant="46" id="Mmc-1I-dQz"/>
                             <constraint firstItem="4zQ-FN-LNK" firstAttribute="centerX" secondItem="Fk3-U6-7Hs" secondAttribute="centerX" id="NTz-HJ-2qF"/>
+                            <constraint firstItem="0PB-MO-Um8" firstAttribute="leading" secondItem="5ng-Nb-9mg" secondAttribute="trailing" constant="8" id="UbZ-Oi-Cyw"/>
+                            <constraint firstItem="MXb-XY-3Dc" firstAttribute="leading" secondItem="0PB-MO-Um8" secondAttribute="trailing" constant="8" id="V6P-tx-JTY"/>
                             <constraint firstItem="4zQ-FN-LNK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="WyR-pO-DKe"/>
                             <constraint firstAttribute="centerX" secondItem="Fk3-U6-7Hs" secondAttribute="centerX" id="ZVJ-pb-l3S"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="kKa-dp-Irc"/>
+                            <constraint firstItem="0PB-MO-Um8" firstAttribute="centerY" secondItem="5ng-Nb-9mg" secondAttribute="centerY" id="kej-jN-twL"/>
+                            <constraint firstItem="MXb-XY-3Dc" firstAttribute="centerY" secondItem="0PB-MO-Um8" secondAttribute="centerY" id="s0W-mg-6yd"/>
                             <constraint firstItem="Fk3-U6-7Hs" firstAttribute="top" secondItem="0PB-MO-Um8" secondAttribute="bottom" constant="8" id="yPv-yJ-AC0"/>
                         </constraints>
                     </view>
