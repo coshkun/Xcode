@@ -47,21 +47,39 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-5v-4rH">
+                                <rect key="frame" x="66" y="553" width="57" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Start Over">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDL-pr-pZX">
+                                <rect key="frame" x="512" y="558" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xDL-pr-pZX" secondAttribute="bottom" constant="20" id="0K9-65-0VR"/>
                             <constraint firstAttribute="centerY" secondItem="Fk3-U6-7Hs" secondAttribute="centerY" id="4gx-cH-ZKw"/>
                             <constraint firstItem="Fk3-U6-7Hs" firstAttribute="centerX" secondItem="0PB-MO-Um8" secondAttribute="centerX" id="7ch-OG-rqe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xDL-pr-pZX" secondAttribute="trailing" constant="50" id="Cfr-zd-d2n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4zQ-FN-LNK" secondAttribute="trailing" constant="46" id="HsA-PM-LnJ"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="top" secondItem="4zQ-FN-LNK" secondAttribute="bottom" constant="16" id="MBp-L0-90f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0PB-MO-Um8" secondAttribute="trailing" constant="46" id="Mmc-1I-dQz"/>
                             <constraint firstItem="4zQ-FN-LNK" firstAttribute="centerX" secondItem="Fk3-U6-7Hs" secondAttribute="centerX" id="NTz-HJ-2qF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mhm-5v-4rH" secondAttribute="bottom" constant="20" id="RVV-IP-4Mt"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="leading" secondItem="5ng-Nb-9mg" secondAttribute="trailing" constant="8" id="UbZ-Oi-Cyw"/>
                             <constraint firstItem="MXb-XY-3Dc" firstAttribute="leading" secondItem="0PB-MO-Um8" secondAttribute="trailing" constant="8" id="V6P-tx-JTY"/>
                             <constraint firstItem="4zQ-FN-LNK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="WyR-pO-DKe"/>
                             <constraint firstAttribute="centerX" secondItem="Fk3-U6-7Hs" secondAttribute="centerX" id="ZVJ-pb-l3S"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="kKa-dp-Irc"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="centerY" secondItem="5ng-Nb-9mg" secondAttribute="centerY" id="kej-jN-twL"/>
+                            <constraint firstItem="0PB-MO-Um8" firstAttribute="top" secondItem="4zQ-FN-LNK" secondAttribute="bottom" constant="16" id="n3i-s2-PVf"/>
+                            <constraint firstItem="Mhm-5v-4rH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="rPE-ey-OeE"/>
                             <constraint firstItem="MXb-XY-3Dc" firstAttribute="centerY" secondItem="0PB-MO-Um8" secondAttribute="centerY" id="s0W-mg-6yd"/>
                             <constraint firstItem="Fk3-U6-7Hs" firstAttribute="top" secondItem="0PB-MO-Um8" secondAttribute="bottom" constant="8" id="yPv-yJ-AC0"/>
                         </constraints>
