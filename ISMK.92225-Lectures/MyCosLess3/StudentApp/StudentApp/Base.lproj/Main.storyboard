@@ -17,16 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Öğrenci Adı, Nosu yada Email girini:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-Da-sjz">
-                                <rect key="frame" x="16" y="28" width="568" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgm-n0-dBM">
                                 <rect key="frame" x="270" y="95" width="60" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="wZM-IB-zWX"/>
+                                    <constraint firstAttribute="width" constant="60" id="lhY-dt-KPi"/>
                                 </constraints>
                                 <state key="normal" title="Hesapla">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,7 +32,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Öğrenci Detayları" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbh-lp-uou">
                                 <rect key="frame" x="16" y="133" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Öğrenci Adı, Nosu yada Email girini:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcD-Da-sjz">
+                                <rect key="frame" x="16" y="28" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="İsim, No yada Email.." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBf-Ac-ea8">
@@ -49,25 +49,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sbh-lp-uou" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6Fb-ta-dnT"/>
-                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7uw-ns-F8h"/>
-                            <constraint firstAttribute="centerX" secondItem="fgm-n0-dBM" secondAttribute="centerX" id="8OM-zp-UD5"/>
-                            <constraint firstItem="sbh-lp-uou" firstAttribute="top" secondItem="fgm-n0-dBM" secondAttribute="bottom" constant="8" symbolic="YES" id="9fc-29-6KZ"/>
-                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="trailing" secondItem="sbh-lp-uou" secondAttribute="trailing" id="BcE-tz-qXx"/>
-                            <constraint firstItem="OcD-Da-sjz" firstAttribute="leading" secondItem="NBf-Ac-ea8" secondAttribute="leading" id="HQF-Qk-h6t"/>
-                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jj6-uN-3Gb"/>
-                            <constraint firstItem="fgm-n0-dBM" firstAttribute="top" secondItem="NBf-Ac-ea8" secondAttribute="bottom" constant="8" symbolic="YES" id="NjZ-iQ-yEk"/>
-                            <constraint firstItem="fgm-n0-dBM" firstAttribute="centerX" secondItem="sbh-lp-uou" secondAttribute="centerX" id="YmP-Tl-mwv"/>
-                            <constraint firstItem="sbh-lp-uou" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Z0o-7y-jjG"/>
-                            <constraint firstItem="OcD-Da-sjz" firstAttribute="trailing" secondItem="NBf-Ac-ea8" secondAttribute="trailing" id="ZXy-Tm-0tq"/>
-                            <constraint firstItem="OcD-Da-sjz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dPp-QC-GFU"/>
-                            <constraint firstItem="OcD-Da-sjz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="daE-Ne-MEj"/>
-                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="fbI-Nc-pje"/>
-                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="leading" secondItem="sbh-lp-uou" secondAttribute="leading" id="fqd-a9-t9Z"/>
-                            <constraint firstItem="OcD-Da-sjz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="jOy-Ng-0t3"/>
-                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="top" secondItem="OcD-Da-sjz" secondAttribute="bottom" constant="8" symbolic="YES" id="sDO-5N-5eg"/>
-                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="snh-6K-f26"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sbh-lp-uou" secondAttribute="bottom" constant="446" id="tWl-fz-aZb"/>
+                            <constraint firstItem="OcD-Da-sjz" firstAttribute="trailing" secondItem="NBf-Ac-ea8" secondAttribute="trailing" id="0W6-tc-8xg"/>
+                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="top" secondItem="OcD-Da-sjz" secondAttribute="bottom" constant="8" symbolic="YES" id="Wae-Xo-fNt"/>
+                            <constraint firstItem="sbh-lp-uou" firstAttribute="top" secondItem="fgm-n0-dBM" secondAttribute="bottom" constant="8" symbolic="YES" id="XEH-hm-0Qw"/>
+                            <constraint firstItem="fgm-n0-dBM" firstAttribute="top" secondItem="NBf-Ac-ea8" secondAttribute="bottom" constant="8" symbolic="YES" id="b54-gN-aW5"/>
+                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="leading" secondItem="OcD-Da-sjz" secondAttribute="leading" id="fVw-Y3-99O"/>
+                            <constraint firstItem="OcD-Da-sjz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ft0-jG-4hz"/>
+                            <constraint firstItem="sbh-lp-uou" firstAttribute="trailing" secondItem="NBf-Ac-ea8" secondAttribute="trailing" id="g8t-zE-a8S"/>
+                            <constraint firstItem="OcD-Da-sjz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="gTs-kD-7iw"/>
+                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="leading" secondItem="sbh-lp-uou" secondAttribute="leading" id="mdV-ir-x7p"/>
+                            <constraint firstItem="NBf-Ac-ea8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="u3C-M6-2Mr"/>
+                            <constraint firstItem="fgm-n0-dBM" firstAttribute="centerX" secondItem="sbh-lp-uou" secondAttribute="centerX" id="vIz-qH-gxa"/>
                         </constraints>
                     </view>
                     <connections>
