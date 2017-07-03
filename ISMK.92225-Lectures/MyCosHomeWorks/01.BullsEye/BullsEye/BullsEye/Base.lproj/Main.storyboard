@@ -106,6 +106,8 @@
                     </view>
                     <connections>
                         <outlet property="btnHitMe" destination="Fk3-U6-7Hs" id="pVM-5V-YCp"/>
+                        <outlet property="lblRound" destination="xDB-wa-AH4" id="P6I-qn-a3s"/>
+                        <outlet property="lblSkore" destination="oEZ-qa-n4e" id="ZFo-TB-TtY"/>
                         <outlet property="lblTarget" destination="4zQ-FN-LNK" id="bNx-dB-nDg"/>
                         <outlet property="sldrBull" destination="0PB-MO-Um8" id="Ytg-z0-qH1"/>
                     </connections>
