@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblTarget: UILabel!
     @IBOutlet weak var lblRound: UILabel!
     @IBOutlet weak var lblSkore: UILabel!
+    @IBOutlet weak var btnStartGame: UIButton!
     
     var HitValue:Int = 0
     var TargetValue:Int = 0
@@ -66,6 +67,14 @@ class ViewController: UIViewController {
     @IBAction func sldrBull_ValueChanged(sender: UISlider, forEvent event: UIEvent) {
         HitValue = lroundf(sender.value)
         //print("\nThe value of the slider is now: \(HitValue)")
+    }
+    @IBAction func btnStartGame_Start(sender: AnyObject) {
+        Skore = 0
+        RoundCounter = 0
+        sldrBull.value = 50
+        HitValue = 50
+        TargetValue = newTarget()
+        updateLabels()
     }
     
     func newTarget() -> Int {

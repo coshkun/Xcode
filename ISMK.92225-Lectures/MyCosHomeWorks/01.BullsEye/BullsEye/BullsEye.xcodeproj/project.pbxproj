@@ -13,6 +13,7 @@
 		D56603D01F08D792008E65A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D56603CF1F08D792008E65A1 /* Images.xcassets */; };
 		D56603D31F08D792008E65A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D56603D11F08D792008E65A1 /* LaunchScreen.xib */; };
 		D56603DF1F08D792008E65A1 /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56603DE1F08D792008E65A1 /* BullsEyeTests.swift */; };
+		D56BE9301F0A796C00764EB6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56BE92F1F0A796C00764EB6 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		D56603D81F08D792008E65A1 /* BullsEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BullsEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56603DD1F08D792008E65A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D56603DE1F08D792008E65A1 /* BullsEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeTests.swift; sourceTree = "<group>"; };
+		D56BE92F1F0A796C00764EB6 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				D56603C81F08D792008E65A1 /* AppDelegate.swift */,
+				D56BE92F1F0A796C00764EB6 /* AboutViewController.swift */,
 				D56603CA1F08D792008E65A1 /* ViewController.swift */,
 				D56603CC1F08D792008E65A1 /* Main.storyboard */,
 				D56603CF1F08D792008E65A1 /* Images.xcassets */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D56BE9301F0A796C00764EB6 /* AboutViewController.swift in Sources */,
 				D56603CB1F08D792008E65A1 /* ViewController.swift in Sources */,
 				D56603C91F08D792008E65A1 /* AppDelegate.swift in Sources */,
 			);
@@ -346,6 +350,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -357,6 +362,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

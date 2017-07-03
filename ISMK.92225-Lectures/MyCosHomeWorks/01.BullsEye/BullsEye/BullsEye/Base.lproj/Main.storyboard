@@ -56,12 +56,18 @@
                                 <state key="normal" title="Start Over">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnStartGame_Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1V-tu-dzE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDL-pr-pZX">
                                 <rect key="frame" x="512" y="558" width="22" height="22"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="IfQ-eG-q7U" kind="presentation" identifier="AboutSegue" modalTransitionStyle="flipHorizontal" id="ofK-FW-yl0"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Skore: 1884" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-qa-n4e">
                                 <rect key="frame" x="66" y="530" width="406" height="15"/>
@@ -104,8 +110,10 @@
                             <constraint firstItem="Fk3-U6-7Hs" firstAttribute="top" secondItem="0PB-MO-Um8" secondAttribute="bottom" constant="8" id="yPv-yJ-AC0"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="btnHitMe" destination="Fk3-U6-7Hs" id="pVM-5V-YCp"/>
+                        <outlet property="btnStartGame" destination="Mhm-5v-4rH" id="Bzj-FL-S2H"/>
                         <outlet property="lblRound" destination="xDB-wa-AH4" id="P6I-qn-a3s"/>
                         <outlet property="lblSkore" destination="oEZ-qa-n4e" id="ZFo-TB-TtY"/>
                         <outlet property="lblTarget" destination="4zQ-FN-LNK" id="bNx-dB-nDg"/>
@@ -114,6 +122,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-291" y="34"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="DxP-3N-GEG">
+            <objects>
+                <viewController id="IfQ-eG-q7U" customClass="AboutViewController" customModule="BullsEye" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="in1-Hq-cUz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zc0-RQ-Gr2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DjU-jh-fQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID3-Hl-H9G">
+                                <rect key="frame" x="280" y="550" width="40" height="30"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAboutClose_Clicked:" destination="IfQ-eG-q7U" eventType="touchUpInside" id="yXN-ko-27x"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Bull's Eye" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKv-JQ-aAR">
+                                <rect key="frame" x="16" y="30" width="109" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K35-we-YYP">
+                                <rect key="frame" x="16" y="59" width="568" height="441"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">by Coskun Caner
+@2017 Copyright
+Welcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a silly slider.
+Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zc0-RQ-Gr2" firstAttribute="top" secondItem="K35-we-YYP" secondAttribute="bottom" constant="100" id="3cp-Dv-oAh"/>
+                            <constraint firstItem="K35-we-YYP" firstAttribute="top" secondItem="gKv-JQ-aAR" secondAttribute="bottom" id="AXi-mp-snt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="K35-we-YYP" secondAttribute="trailing" id="GBJ-iP-fOV"/>
+                            <constraint firstAttribute="centerX" secondItem="ID3-Hl-H9G" secondAttribute="centerX" id="Iyj-el-Bwe"/>
+                            <constraint firstItem="gKv-JQ-aAR" firstAttribute="top" secondItem="in1-Hq-cUz" secondAttribute="bottom" constant="10" id="e95-uk-Pdg"/>
+                            <constraint firstItem="K35-we-YYP" firstAttribute="leading" secondItem="DjU-jh-fQ3" secondAttribute="leadingMargin" id="u68-B1-c9I"/>
+                            <constraint firstItem="gKv-JQ-aAR" firstAttribute="leading" secondItem="DjU-jh-fQ3" secondAttribute="leadingMargin" id="ujy-Jl-ChV"/>
+                            <constraint firstItem="Zc0-RQ-Gr2" firstAttribute="top" secondItem="ID3-Hl-H9G" secondAttribute="bottom" constant="20" id="wfx-ex-EM7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnAboutClose" destination="ID3-Hl-H9G" id="p2Y-TR-0f8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s0s-kR-89P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="34"/>
         </scene>
     </scenes>
 </document>
