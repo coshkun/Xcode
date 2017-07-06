@@ -17,69 +17,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-U6-7Hs">
-                                <rect key="frame" x="275" y="285" width="50" height="30"/>
-                                <state key="normal" title="Hit Me!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="qiW-3e-JDb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-U6-7Hs">
+                                <rect key="frame" x="250" y="282" width="100" height="37"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Hit Me!" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.37647058823529411" green="0.11764705882352941" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted"/>
                                 <connections>
                                     <action selector="btnHitMe_ShowAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sEM-L5-5LM"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="0PB-MO-Um8">
-                                <rect key="frame" x="60" y="247" width="480" height="31"/>
+                                <rect key="frame" x="60" y="244" width="480" height="31"/>
                                 <connections>
                                     <action selector="sldrBull_ValueChanged:forEvent:" destination="BYZ-38-t0r" eventType="valueChanged" id="ZCX-nQ-vxR"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Put the Bull's Eye as close as you can to: 25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zQ-FN-LNK">
-                                <rect key="frame" x="62" y="210" width="476" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="62" y="208" width="476" height="20"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXb-XY-3Dc">
-                                <rect key="frame" x="546" y="251" width="29" height="21"/>
+                                <rect key="frame" x="546" y="248" width="29" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ng-Nb-9mg">
-                                <rect key="frame" x="44" y="251" width="10" height="21"/>
+                                <rect key="frame" x="44" y="248" width="10" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-5v-4rH">
-                                <rect key="frame" x="66" y="553" width="57" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <state key="normal" title="Start Over">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhm-5v-4rH">
+                                <rect key="frame" x="66" y="548" width="32" height="32"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" image="StartOverIcon" backgroundImage="SmallButton">
+                                    <color key="titleShadowColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="btnStartGame_Start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p1V-tu-dzE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDL-pr-pZX">
-                                <rect key="frame" x="512" y="558" width="22" height="22"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDL-pr-pZX">
+                                <rect key="frame" x="502" y="548" width="32" height="32"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" image="InfoButton" backgroundImage="SmallButton">
+                                    <color key="titleShadowColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="IfQ-eG-q7U" kind="presentation" identifier="AboutSegue" modalTransitionStyle="flipHorizontal" id="ofK-FW-yl0"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Skore: 1884" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEZ-qa-n4e">
-                                <rect key="frame" x="66" y="530" width="406" height="15"/>
+                                <rect key="frame" x="66" y="524" width="406" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round: 27" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDB-wa-AH4">
-                                <rect key="frame" x="480" y="530" width="58" height="15"/>
+                                <rect key="frame" x="480" y="524" width="58" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -91,17 +109,21 @@
                             <constraint firstAttribute="trailingMargin" secondItem="xDL-pr-pZX" secondAttribute="trailing" constant="50" id="Cfr-zd-d2n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xDB-wa-AH4" secondAttribute="trailing" constant="46" id="EsN-aB-ylS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4zQ-FN-LNK" secondAttribute="trailing" constant="46" id="HsA-PM-LnJ"/>
-                            <constraint firstItem="xDL-pr-pZX" firstAttribute="top" secondItem="xDB-wa-AH4" secondAttribute="bottom" constant="13" id="K6d-PR-98g"/>
+                            <constraint firstItem="xDL-pr-pZX" firstAttribute="top" secondItem="xDB-wa-AH4" secondAttribute="bottom" constant="8" id="K6d-PR-98g"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="top" secondItem="4zQ-FN-LNK" secondAttribute="bottom" constant="16" id="MBp-L0-90f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0PB-MO-Um8" secondAttribute="trailing" constant="46" id="Mmc-1I-dQz"/>
                             <constraint firstItem="4zQ-FN-LNK" firstAttribute="centerX" secondItem="Fk3-U6-7Hs" secondAttribute="centerX" id="NTz-HJ-2qF"/>
+                            <constraint firstItem="qiW-3e-JDb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="QHG-kJ-qI8"/>
                             <constraint firstItem="Mhm-5v-4rH" firstAttribute="top" secondItem="oEZ-qa-n4e" secondAttribute="bottom" constant="8" id="R3Y-qT-Pez"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mhm-5v-4rH" secondAttribute="bottom" constant="20" id="RVV-IP-4Mt"/>
                             <constraint firstItem="xDB-wa-AH4" firstAttribute="leading" secondItem="oEZ-qa-n4e" secondAttribute="trailing" constant="8" id="Rgs-EG-nMF"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="leading" secondItem="5ng-Nb-9mg" secondAttribute="trailing" constant="8" id="UbZ-Oi-Cyw"/>
                             <constraint firstItem="MXb-XY-3Dc" firstAttribute="leading" secondItem="0PB-MO-Um8" secondAttribute="trailing" constant="8" id="V6P-tx-JTY"/>
                             <constraint firstItem="4zQ-FN-LNK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="WyR-pO-DKe"/>
+                            <constraint firstItem="qiW-3e-JDb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Z0n-ga-PWH"/>
                             <constraint firstAttribute="centerX" secondItem="Fk3-U6-7Hs" secondAttribute="centerX" id="ZVJ-pb-l3S"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qiW-3e-JDb" secondAttribute="bottom" id="aAe-fb-iti"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qiW-3e-JDb" secondAttribute="trailing" constant="-16" id="hBN-eo-sDX"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="46" id="kKa-dp-Irc"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="centerY" secondItem="5ng-Nb-9mg" secondAttribute="centerY" id="kej-jN-twL"/>
                             <constraint firstItem="0PB-MO-Um8" firstAttribute="top" secondItem="4zQ-FN-LNK" secondAttribute="bottom" constant="16" id="n3i-s2-PVf"/>
@@ -136,40 +158,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID3-Hl-H9G">
-                                <rect key="frame" x="280" y="550" width="40" height="30"/>
-                                <state key="normal" title="Close">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="qkw-7E-jXi">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ID3-Hl-H9G">
+                                <rect key="frame" x="250" y="543" width="100" height="37"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Close" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.37647058820000001" green="0.1176470588" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" backgroundImage="Button-Highlighted"/>
                                 <connections>
                                     <action selector="btnAboutClose_Clicked:" destination="IfQ-eG-q7U" eventType="touchUpInside" id="yXN-ko-27x"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Bull's Eye" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKv-JQ-aAR">
-                                <rect key="frame" x="16" y="30" width="109" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <rect key="frame" x="16" y="30" width="119" height="29"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K35-we-YYP">
                                 <rect key="frame" x="16" y="59" width="568" height="441"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">by Coskun Caner
 @2017 Copyright
-Welcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a silly slider.
-Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!
+
+Welcome to the awesome game of Bull’s Eye where you can win points and fame by dragging a silly slider.
+
+Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!
 </string>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qkw-7E-jXi" firstAttribute="top" secondItem="in1-Hq-cUz" secondAttribute="bottom" id="1P6-WX-atc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qkw-7E-jXi" secondAttribute="trailing" constant="-16" id="2Rx-G0-XPj"/>
                             <constraint firstItem="Zc0-RQ-Gr2" firstAttribute="top" secondItem="K35-we-YYP" secondAttribute="bottom" constant="100" id="3cp-Dv-oAh"/>
                             <constraint firstItem="K35-we-YYP" firstAttribute="top" secondItem="gKv-JQ-aAR" secondAttribute="bottom" id="AXi-mp-snt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="K35-we-YYP" secondAttribute="trailing" id="GBJ-iP-fOV"/>
                             <constraint firstAttribute="centerX" secondItem="ID3-Hl-H9G" secondAttribute="centerX" id="Iyj-el-Bwe"/>
-                            <constraint firstItem="gKv-JQ-aAR" firstAttribute="top" secondItem="in1-Hq-cUz" secondAttribute="bottom" constant="10" id="e95-uk-Pdg"/>
+                            <constraint firstItem="Zc0-RQ-Gr2" firstAttribute="top" secondItem="qkw-7E-jXi" secondAttribute="bottom" id="Sn7-vG-uNe"/>
+                            <constraint firstItem="gKv-JQ-aAR" firstAttribute="top" secondItem="in1-Hq-cUz" secondAttribute="bottom" constant="30" id="e95-uk-Pdg"/>
+                            <constraint firstItem="qkw-7E-jXi" firstAttribute="leading" secondItem="DjU-jh-fQ3" secondAttribute="leadingMargin" constant="-16" id="fNV-vE-Zl8"/>
                             <constraint firstItem="K35-we-YYP" firstAttribute="leading" secondItem="DjU-jh-fQ3" secondAttribute="leadingMargin" id="u68-B1-c9I"/>
                             <constraint firstItem="gKv-JQ-aAR" firstAttribute="leading" secondItem="DjU-jh-fQ3" secondAttribute="leadingMargin" id="ujy-Jl-ChV"/>
                             <constraint firstItem="Zc0-RQ-Gr2" firstAttribute="top" secondItem="ID3-Hl-H9G" secondAttribute="bottom" constant="20" id="wfx-ex-EM7"/>
@@ -184,4 +221,12 @@
             <point key="canvasLocation" x="387" y="34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="568" height="320"/>
+        <image name="Button-Highlighted" width="100" height="37"/>
+        <image name="Button-Normal" width="100" height="37"/>
+        <image name="InfoButton" width="10" height="22"/>
+        <image name="SmallButton" width="32" height="32"/>
+        <image name="StartOverIcon" width="20" height="20"/>
+    </resources>
 </document>

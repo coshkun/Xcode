@@ -29,6 +29,23 @@ class ViewController: UIViewController {
         HitValue = lroundf(sldrBull.value)
         TargetValue = newTarget()
         updateLabels()
+        
+        //Slider Makeup
+        let thumbImageNormal = UIImage(named: "SliderThumb-Normal")!
+        sldrBull.setThumbImage(thumbImageNormal, forState: UIControlState.Normal)
+        
+        let thumbImageHighlighted = UIImage(named: "SliderThumb-Highlighted")!
+        sldrBull.setThumbImage(thumbImageHighlighted, forState: UIControlState.Highlighted)
+        
+        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        
+        let trackLeftImage = UIImage(named: "SliderTrackLeft")!
+        let trackLeftResizable = trackLeftImage.resizableImageWithCapInsets(insets) //.resizableImage(withCapInsets: insets)
+            sldrBull.setMinimumTrackImage(trackLeftResizable, forState: UIControlState.Normal)
+        
+        let trackRightImage = UIImage(named: "SliderTrackRight")!
+        let trackRightResizable = trackRightImage.resizableImageWithCapInsets(insets)
+            sldrBull.setMaximumTrackImage(trackRightResizable, forState: UIControlState.Normal)
     }
 
     override func didReceiveMemoryWarning() {
