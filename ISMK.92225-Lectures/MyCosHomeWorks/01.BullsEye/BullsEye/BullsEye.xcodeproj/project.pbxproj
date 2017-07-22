@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D51F7C2A1F1EB73900EDCA03 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = D51F7C291F1EB73900EDCA03 /* BullsEye.html */; };
 		D56603C91F08D792008E65A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56603C81F08D792008E65A1 /* AppDelegate.swift */; };
 		D56603CB1F08D792008E65A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56603CA1F08D792008E65A1 /* ViewController.swift */; };
 		D56603CE1F08D792008E65A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D56603CC1F08D792008E65A1 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D51F7C291F1EB73900EDCA03 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 		D56603C31F08D792008E65A1 /* BullsEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BullsEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D56603C71F08D792008E65A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D56603C81F08D792008E65A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		D56603C51F08D792008E65A1 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				D51F7C291F1EB73900EDCA03 /* BullsEye.html */,
 				D56603C81F08D792008E65A1 /* AppDelegate.swift */,
 				D56BE92F1F0A796C00764EB6 /* AboutViewController.swift */,
 				D56603CA1F08D792008E65A1 /* ViewController.swift */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D56603CE1F08D792008E65A1 /* Main.storyboard in Resources */,
+				D51F7C2A1F1EB73900EDCA03 /* BullsEye.html in Resources */,
 				D56603D31F08D792008E65A1 /* LaunchScreen.xib in Resources */,
 				D56603D01F08D792008E65A1 /* Images.xcassets in Resources */,
 			);
@@ -295,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -334,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,6 +350,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -358,6 +364,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
