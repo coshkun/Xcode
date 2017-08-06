@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>56DFB2C3-92BA-47AB-B9AB-F96457B16CBE</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>iCheck</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>72A7E6ED172B33553224E30F835BA4365D8BB98B</key>
 		<string>https://github.com/coshkun/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ISMK.92225-Lectures/MyCosHomeWorks/02.iCheck/iCheck/iCheck.xcodeproj/project.xcworkspace</string>
+	<string>ISMK.92225-Lectures/MyCosHomeWorks/02.iCheck/iCheck/iCheck.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>72A7E6ED172B33553224E30F835BA4365D8BB98B</key>

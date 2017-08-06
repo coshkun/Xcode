@@ -8,8 +8,10 @@
 
 import UIKit
 
-class iCheckViewController: UITableViewController {
+class iCheckViewController: UITableViewController, ItemDetailViewControllerDelegate {
     var items : [CheckListItem]
+    @IBOutlet weak var btnAdd: UIBarButtonItem!
+    
     
     required init?(coder aDecoder: NSCoder) {
         items = [CheckListItem]()
@@ -79,18 +81,84 @@ class iCheckViewController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        items.removeAtIndex(indexPath.row)
+        let itms = [indexPath]
+        tableView.deleteRowsAtIndexPaths(itms, withRowAnimation: .Automatic)
+    }
+    
     func configureCheckmark(cell: UITableViewCell, with item: CheckListItem) {
+        let chkMark = cell.viewWithTag(1001) as! UILabel
         
         if item.checked {
-            cell.accessoryType = .Checkmark
+            //cell.accessoryType = .Checkmark
+            chkMark.hidden = false
         } else {
-            cell.accessoryType = .None
+            //cell.accessoryType = .None
+            chkMark.hidden = true
         }
     }
     
     func configureText(cell: UITableViewCell, with item: CheckListItem){
         let label = cell.viewWithTag(1000) as! UILabel
         label.text = item.text
+    }
+    
+    /* @IBAction func btnAdd_Click(sender: UIBarButtonItem) {
+        let newRowIndex = items.count
+        
+        let item = CheckListItem()
+        item.text = "i am new row"
+        item.checked = false
+        items.append(item)
+        
+        let indexPath = NSIndexPath(forRow: newRowIndex, inSection: 0)
+        let indexPaths = [indexPath]
+        tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
+    } */
+    
+    func itemDetailViewControllerDidCancel(controller: ItemDetailViewController) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func itemDetailViewController(controller: ItemDetailViewController, didFinishAdding item: CheckListItem) {
+        let newRowIdex = items.count
+        items.append(item)
+        
+        let indexPath = NSIndexPath(forRow: newRowIdex, inSection: 0)
+        let indexPaths = [indexPath]
+        
+        tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
+        
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func itemDetailViewController(controller: ItemDetailViewController, didFinishEditing item: CheckListItem) {
+        if let index = (items as NSArray).indexOfObject(item) as Int? {
+            let indexPath = NSIndexPath(forRow: index, inSection: 0)
+            if let cell = tableView.cellForRowAtIndexPath(indexPath){
+                configureText(cell, with: item)
+            }
+        }
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "AddItemSegue" {
+            let naviCtrl = segue.destinationViewController as! UINavigationController
+            let viewCtrl = naviCtrl.topViewController as! ItemDetailViewController
+            viewCtrl.delegate = self
+        }
+        else if segue.identifier == "EditItemSegue" {
+            let naviCtrl = segue.destinationViewController as! UINavigationController
+            let viewCtrl = naviCtrl.topViewController as! ItemDetailViewController
+            viewCtrl.delegate = self
+            
+            if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell) {
+                viewCtrl.itemToEdit = items[indexPath.row]
+            }
+        }
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5344A161F2DA4080044234D /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5344A151F2DA4080044234D /* ItemDetailViewController.swift */; };
 		D5F1CB001F277BFF007791B9 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F1CAFF1F277BFF007791B9 /* CheckListItem.swift */; };
 		D5F306271F252A97009D437A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F306261F252A97009D437A /* AppDelegate.swift */; };
 		D5F306291F252A97009D437A /* iCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F306281F252A97009D437A /* iCheckViewController.swift */; };
@@ -27,11 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D5344A151F2DA4080044234D /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D5F1CAFF1F277BFF007791B9 /* CheckListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
 		D5F306211F252A97009D437A /* iCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F306251F252A97009D437A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5F306261F252A97009D437A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5F306281F252A97009D437A /* iCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCheckViewController.swift; sourceTree = "<group>"; };
+		D5F306281F252A97009D437A /* iCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = iCheckViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D5F3062B1F252A97009D437A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5F3062D1F252A97009D437A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D5F306301F252A97009D437A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				D5F3062F1F252A97009D437A /* LaunchScreen.xib */,
 				D5F306241F252A97009D437A /* Supporting Files */,
 				D5F1CAFF1F277BFF007791B9 /* CheckListItem.swift */,
+				D5344A151F2DA4080044234D /* ItemDetailViewController.swift */,
 			);
 			path = iCheck;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5F1CB001F277BFF007791B9 /* CheckListItem.swift in Sources */,
+				D5344A161F2DA4080044234D /* ItemDetailViewController.swift in Sources */,
 				D5F306291F252A97009D437A /* iCheckViewController.swift in Sources */,
 				D5F306271F252A97009D437A /* AppDelegate.swift in Sources */,
 			);
