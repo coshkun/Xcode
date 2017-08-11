@@ -10,37 +10,14 @@ import UIKit
 
 class iCheckViewController: UITableViewController, ItemDetailViewControllerDelegate {
     var items : [CheckListItem]
+    var checklist: CheckList!
     @IBOutlet weak var btnAdd: UIBarButtonItem!
+    @IBOutlet weak var navBar: UINavigationItem!
     
     
     required init?(coder aDecoder: NSCoder) {
         items = [CheckListItem]()
-        /*
-        let row0item = CheckListItem()
-        row0item.text = "Walk the dog"
-        row0item.checked = false
-        items.append(row0item)
         
-        let row1item = CheckListItem()
-        row1item.text = "Brush your teeth"
-        row1item.checked = true
-        items.append(row1item)
-        
-        let row2item = CheckListItem()
-        row2item.text = "Learn iOS development"
-        row2item.checked = true
-        items.append(row2item)
-        
-        let row3item = CheckListItem()
-        row3item.text = "Play SWGOH again"
-        row3item.checked = false
-        items.append(row3item)
-        
-        let row4item = CheckListItem()
-        row4item.text = "Get some sleep"
-        row4item.checked = false
-        items.append(row4item)
-        */
         super.init(coder: aDecoder)
         // print("Documents folder is \(documentsDirectory())")
         // print("Data file path is \(dataFilePath())")
@@ -51,6 +28,7 @@ class iCheckViewController: UITableViewController, ItemDetailViewControllerDeleg
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        navBar.title = checklist.name
     }
 
     override func didReceiveMemoryWarning() {
