@@ -67,7 +67,7 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         
         let list = lists[indexPath.row]
         cell.textLabel!.text = list.name
-        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        cell.accessoryType = UITableViewCellAccessoryType.DetailDisclosureButton
         
         return cell
     }
@@ -105,7 +105,17 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
 //            performSegueWithIdentifier("ShowChecklistSegue", sender: lists[indexPath.row] as CheckList)
         }
     }
-
+    
+    override func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+        
+        let navicontrol = storyboard!.instantiateViewControllerWithIdentifier("ListDetailNavigationController") as! UINavigationController
+        let controller = navicontrol.topViewController as! ListDetailViewController
+        
+        controller.delegate = self
+        controller.listToEdit = lists[indexPath.row]
+        
+        presentViewController(navicontrol, animated: true, completion: nil)
+    }
     /*
     // Override to support rearranging the table view.
     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
