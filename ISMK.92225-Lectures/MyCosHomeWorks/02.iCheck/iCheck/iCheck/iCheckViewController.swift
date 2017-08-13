@@ -9,21 +9,21 @@
 import UIKit
 
 class iCheckViewController: UITableViewController, ItemDetailViewControllerDelegate {
-    var items : [CheckListItem]
+    //var items : [CheckListItem]
     var checklist: CheckList!
     @IBOutlet weak var btnAdd: UIBarButtonItem!
     @IBOutlet weak var navBar: UINavigationItem!
     
-    
+    /*
     required init?(coder aDecoder: NSCoder) {
-        items = [CheckListItem]()
+        //items = [CheckListItem]()
         
         super.init(coder: aDecoder)
         // print("Documents folder is \(documentsDirectory())")
         // print("Data file path is \(dataFilePath())")
-        loadChecklistItems()
+        // loadChecklistItems()
     }
-    
+    */
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,14 +37,14 @@ class iCheckViewController: UITableViewController, ItemDetailViewControllerDeleg
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return checklist.items.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("ChecklistItem",
                                                                 forIndexPath: indexPath) as! UITableViewCell
-        let item = items[indexPath.row]
+        let item = checklist.items[indexPath.row]
         
         configureText(cell, with: item)
         configureCheckmark(cell, with: item)
@@ -55,20 +55,20 @@ class iCheckViewController: UITableViewController, ItemDetailViewControllerDeleg
         
         if let cell = tableView.cellForRowAtIndexPath(indexPath)
         {
-            let item = items[indexPath.row]
+            let item = checklist.items[indexPath.row]
             item.toggleChecked()
             configureCheckmark(cell, with: item)
         }
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        saveChecklistItems()
+        //saveChecklistItems()
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         
-        items.removeAtIndex(indexPath.row)
+        checklist.items.removeAtIndex(indexPath.row)
         let itms = [indexPath]
         tableView.deleteRowsAtIndexPaths(itms, withRowAnimation: .Automatic)
-        saveChecklistItems()
+        //saveChecklistItems()
     }
     
     func configureCheckmark(cell: UITableViewCell, with item: CheckListItem) {
@@ -106,8 +106,8 @@ class iCheckViewController: UITableViewController, ItemDetailViewControllerDeleg
     }
     
     func itemDetailViewController(controller: ItemDetailViewController, didFinishAdding item: CheckListItem) {
-        let newRowIdex = items.count
-        items.append(item)
+        let newRowIdex = checklist.items.count
+        checklist.items.append(item)
         
         let indexPath = NSIndexPath(forRow: newRowIdex, inSection: 0)
         let indexPaths = [indexPath]
@@ -115,18 +115,18 @@ class iCheckViewController: UITableViewController, ItemDetailViewControllerDeleg
         tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Automatic)
         
         dismissViewControllerAnimated(true, completion: nil)
-        saveChecklistItems()
+        //saveChecklistItems()
     }
     
     func itemDetailViewController(controller: ItemDetailViewController, didFinishEditing item: CheckListItem) {
-        if let index = (items as NSArray).indexOfObject(item) as Int? {
+        if let index = (checklist.items as NSArray).indexOfObject(item) as Int? {
             let indexPath = NSIndexPath(forRow: index, inSection: 0)
             if let cell = tableView.cellForRowAtIndexPath(indexPath){
                 configureText(cell, with: item)
             }
         }
         dismissViewControllerAnimated(true, completion: nil)
-        saveChecklistItems()
+        //saveChecklistItems()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -141,13 +141,13 @@ class iCheckViewController: UITableViewController, ItemDetailViewControllerDeleg
             viewCtrl.delegate = self
             
             if let indexPath = tableView.indexPathForCell(sender as! UITableViewCell) {
-                viewCtrl.itemToEdit = items[indexPath.row]
+                viewCtrl.itemToEdit = checklist.items[indexPath.row]
             }
         }
     }
     
     // File Operations
-    
+    /*
     func documentsDirectory() -> NSURL {
         let fm = NSFileManager.defaultManager()
         let paths = fm.URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains:NSSearchPathDomainMask.UserDomainMask)
@@ -175,6 +175,7 @@ class iCheckViewController: UITableViewController, ItemDetailViewControllerDeleg
             unarchiver.finishDecoding()
         }
     }
+    */
 }
 
 

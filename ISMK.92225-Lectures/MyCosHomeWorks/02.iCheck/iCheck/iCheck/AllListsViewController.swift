@@ -15,7 +15,8 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
     required init!(coder aDecoder: NSCoder!) {
         lists = [CheckList]()
         super.init(coder: aDecoder)
-        
+        loadChecklists()
+        /*
         var lst = CheckList(name: "Birthdays")
         lists.append(lst)
         
@@ -27,6 +28,18 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         
         lst = CheckList(name: "To Do")
         lists.append(lst)
+        
+        // Fake data
+        for list in lists {
+            var i = 0
+            while i < 5 {
+                var item = CheckListItem()
+                item.text = "item "+String(i)+" of \(list.name)"
+                list.items.append(item)
+                i += 1
+            }
+        }
+        */
     }
 
     override func viewDidLoad() {
@@ -181,7 +194,30 @@ class AllListsViewController: UITableViewController, ListDetailViewControllerDel
         }
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
+    // FILE SYSTEM
+    func documentsDirectory() -> NSURL{
+        let paths = NSFileManager.defaultManager().URLsForDirectory(NSSearchPathDirectory.DocumentDirectory, inDomains: NSSearchPathDomainMask.UserDomainMask)
+        return paths[0] as! NSURL
+    }
+    func dataFilePath() -> NSURL {
+        return documentsDirectory().URLByAppendingPathComponent("iCheckSave.plist")
+    }
+    func saveChecklists(){
+        let data = NSMutableData()
+        let archiver = NSKeyedArchiver(forWritingWithMutableData: data)
+        archiver.encodeObject(lists, forKey: "Checklists")
+        archiver.finishEncoding()
+        data.writeToURL(dataFilePath(), atomically: true)
+    }
+    func loadChecklists(){
+        let path = dataFilePath().path
+        if let data = NSData(contentsOfFile: path!) {
+            let unarchiver = NSKeyedUnarchiver(forReadingWithData: data)
+            lists = unarchiver.decodeObjectForKey("Checklists") as! [CheckList]
+            unarchiver.finishDecoding()
+        }
+        
+    }
 }
 
 
