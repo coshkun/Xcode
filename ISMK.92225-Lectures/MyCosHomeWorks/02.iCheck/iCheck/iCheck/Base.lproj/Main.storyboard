@@ -19,7 +19,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="iCheck" id="dtW-lQ-4a1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="lKh-HS-oSw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lKh-HS-oSw">
                             <connections>
                                 <segue destination="bob-8b-6Yk" kind="presentation" identifier="AddChecklistSegue" id="4Z5-uo-yND"/>
                             </connections>
@@ -123,6 +123,44 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="6Gg-iV-rFQ">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="Y2K-oG-K8t">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y2K-oG-K8t" id="0Oq-Xp-otq">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMg-QN-weh">
+                                                    <rect key="frame" x="1" y="4" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="Nmy-4r-rfu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1U1-HW-VR8">
+                                                    <rect key="frame" x="523" y="4" width="36" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="36" id="byY-Ml-zYq"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="qMg-QN-weh" firstAttribute="bottom" secondItem="1U1-HW-VR8" secondAttribute="bottom" id="093-Ul-5zV"/>
+                                                <constraint firstItem="1U1-HW-VR8" firstAttribute="top" secondItem="qMg-QN-weh" secondAttribute="top" id="2KD-dA-xFp"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="qMg-QN-weh" secondAttribute="bottom" constant="-5" id="L9P-C0-KID"/>
+                                                <constraint firstItem="qMg-QN-weh" firstAttribute="top" secondItem="0Oq-Xp-otq" secondAttribute="topMargin" constant="-4" id="Pr9-M4-4lg"/>
+                                                <constraint firstItem="qMg-QN-weh" firstAttribute="leading" secondItem="0Oq-Xp-otq" secondAttribute="leadingMargin" constant="-7" id="bmv-lq-SWg"/>
+                                                <constraint firstItem="1U1-HW-VR8" firstAttribute="trailing" secondItem="0Oq-Xp-otq" secondAttribute="trailingMargin" id="pHc-oV-MKU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Ifi-FB-avB" kind="show" identifier="PickIconSegue" id="SFG-Af-WcG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="DgO-rU-NRc" id="h57-Qu-KWC"/>
@@ -144,6 +182,7 @@
                     <connections>
                         <outlet property="cancelButton" destination="Nb3-sX-3u1" id="Clp-DK-Kcd"/>
                         <outlet property="doneButton" destination="AhJ-yp-1pO" id="nGX-3E-9Le"/>
+                        <outlet property="iconImageView" destination="1U1-HW-VR8" id="Ums-Ta-OvI"/>
                         <outlet property="navBar" destination="6dI-FF-MkP" id="LU2-l9-5c6"/>
                         <outlet property="textField" destination="LwL-eq-ReR" id="DjE-gL-2Re"/>
                     </connections>
@@ -255,6 +294,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PP6-gg-yQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2200" y="462"/>
+        </scene>
+        <!--Choose Icon-->
+        <scene sceneID="vgn-Se-3Pb">
+            <objects>
+                <tableViewController id="Ifi-FB-avB" customClass="IconPickerViewController" customModule="iCheck" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ljf-Pg-ZTK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IconCell" textLabel="iPU-Fc-pSM" style="IBUITableViewCellStyleDefault" id="hdi-NA-3dJ">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hdi-NA-3dJ" id="TFC-HB-IJP">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iPU-Fc-pSM">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ifi-FB-avB" id="9Je-cj-2s4"/>
+                            <outlet property="delegate" destination="Ifi-FB-avB" id="Z2b-7i-F0H"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Choose Icon" id="nhI-fy-ae9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0S-iz-x23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200" y="1194"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aKA-a1-tBR">

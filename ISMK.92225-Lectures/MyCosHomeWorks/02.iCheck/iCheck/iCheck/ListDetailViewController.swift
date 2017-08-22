@@ -14,15 +14,17 @@ protocol ListDetailViewControllerDelegate: class {
     func listDetailViewController(controller: ListDetailViewController, didFinishEditing checklist: CheckList)
 }
 
-class ListDetailViewController: UITableViewController, UITextFieldDelegate {
+class ListDetailViewController: UITableViewController, UITextFieldDelegate, IconPickerViewControllerDelegate {
 
     @IBOutlet weak var navBar: UINavigationItem!
     @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var cancelButton: UIBarButtonItem!
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var iconImageView: UIImageView!
     
     weak var delegate: ListDetailViewControllerDelegate?
     weak var listToEdit: CheckList?
+         var iconName = "Folder"
     
 
     override func viewDidLoad() {
@@ -37,6 +39,8 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
             navBar.title = "Edit Checklist"
             textField.text = list.name
             doneButton.enabled = true
+            iconName = list.iconName
+            iconImageView.image = UIImage(named: iconName)
         }
     }
 
@@ -65,7 +69,11 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
     }
     
     override func tableView(tableView: UITableView, willSelectRowAtIndexPath indexPath: NSIndexPath) -> NSIndexPath? {
-        return nil
+        if indexPath.section == 1 {
+            return indexPath
+        } else {
+            return nil
+        }
     }
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
@@ -120,15 +128,17 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        if segue.identifier == "PickIconSegue" {
+            let controller = segue.destinationViewController as! IconPickerViewController
+            controller.delegate = self
+        }
     }
-    */
     
     
     @IBAction func btnDone_Action(sender: UIBarButtonItem) {
@@ -147,11 +157,20 @@ class ListDetailViewController: UITableViewController, UITextFieldDelegate {
         //dismissViewControllerAnimated(true, completion: nil)
         if let list = listToEdit {
             list.name = textField.text!
+            list.iconName = iconName
             delegate?.listDetailViewController(self, didFinishEditing: list)
         }
         else {
             let list = CheckList(name: textField.text!)
+            list.iconName = iconName
             delegate?.listDetailViewController(self, didFinishAdding: list)
         }
+    }
+    
+    func iconPicker(picker: IconPickerViewController, didPicked iconName: String) {
+        self.iconName = iconName
+        iconImageView.image = UIImage(named: iconName)
+        let _ = navigationController?.popViewControllerAnimated(true)
+        //dismissViewControllerAnimated(true, completion: nil)
     }
 }

@@ -10,6 +10,7 @@
 		D51A58431F3C11DC00023654 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51A58421F3C11DC00023654 /* AllListsViewController.swift */; };
 		D51A58451F3C5C3900023654 /* CheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51A58441F3C5C3900023654 /* CheckList.swift */; };
 		D51A58471F3CAC5400023654 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51A58461F3CAC5400023654 /* ListDetailViewController.swift */; };
+		D5294CA21F4B3583001469DD /* IconPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5294CA11F4B3583001469DD /* IconPickerViewController.swift */; };
 		D5344A161F2DA4080044234D /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5344A151F2DA4080044234D /* ItemDetailViewController.swift */; };
 		D5F1CB001F277BFF007791B9 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F1CAFF1F277BFF007791B9 /* CheckListItem.swift */; };
 		D5F306271F252A97009D437A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F306261F252A97009D437A /* AppDelegate.swift */; };
@@ -18,6 +19,7 @@
 		D5F3062E1F252A97009D437A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5F3062D1F252A97009D437A /* Images.xcassets */; };
 		D5F306311F252A97009D437A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5F3062F1F252A97009D437A /* LaunchScreen.xib */; };
 		D5F3063D1F252A97009D437A /* iCheckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F3063C1F252A97009D437A /* iCheckTests.swift */; };
+		D5FA2D3A1F4092FC00547B23 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5FA2D391F4092FC00547B23 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 		D51A58421F3C11DC00023654 /* AllListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListsViewController.swift; sourceTree = "<group>"; };
 		D51A58441F3C5C3900023654 /* CheckList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckList.swift; sourceTree = "<group>"; };
 		D51A58461F3CAC5400023654 /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
+		D5294CA11F4B3583001469DD /* IconPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPickerViewController.swift; sourceTree = "<group>"; };
 		D5344A151F2DA4080044234D /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D5F1CAFF1F277BFF007791B9 /* CheckListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
 		D5F306211F252A97009D437A /* iCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +49,7 @@
 		D5F306361F252A97009D437A /* iCheckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCheckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F3063B1F252A97009D437A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5F3063C1F252A97009D437A /* iCheckTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCheckTests.swift; sourceTree = "<group>"; };
+		D5FA2D391F4092FC00547B23 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				D51A58421F3C11DC00023654 /* AllListsViewController.swift */,
 				D51A58441F3C5C3900023654 /* CheckList.swift */,
 				D51A58461F3CAC5400023654 /* ListDetailViewController.swift */,
+				D5FA2D391F4092FC00547B23 /* DataModel.swift */,
+				D5294CA11F4B3583001469DD /* IconPickerViewController.swift */,
 			);
 			path = iCheck;
 			sourceTree = "<group>";
@@ -230,8 +236,10 @@
 				D5F1CB001F277BFF007791B9 /* CheckListItem.swift in Sources */,
 				D51A58471F3CAC5400023654 /* ListDetailViewController.swift in Sources */,
 				D5344A161F2DA4080044234D /* ItemDetailViewController.swift in Sources */,
+				D5294CA21F4B3583001469DD /* IconPickerViewController.swift in Sources */,
 				D5F306291F252A97009D437A /* iCheckViewController.swift in Sources */,
 				D51A58431F3C11DC00023654 /* AllListsViewController.swift in Sources */,
+				D5FA2D3A1F4092FC00547B23 /* DataModel.swift in Sources */,
 				D51A58451F3C5C3900023654 /* CheckList.swift in Sources */,
 				D5F306271F252A97009D437A /* AppDelegate.swift in Sources */,
 			);
