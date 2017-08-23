@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintLocationsKey" : {
+    "72A7E6ED172B33553224E30F835BA4365D8BB98B" : {
+      "DVTSourceControlBranchIdentifierKey" : "master",
+      "DVTSourceControlLocationRevisionKey" : "b316e9532a4a716c0fb2de49bda6fafcaa7c833c",
+      "DVTSourceControlBranchOptionsKey" : 48,
+      "DVTSourceControlWorkspaceBlueprintLocationTypeKey" : "DVTSourceControlBranch"
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "72A7E6ED172B33553224E30F835BA4365D8BB98B",
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C7582E68-2FD9-4FB1-96E7-AC8A12A4FCC4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "72A7E6ED172B33553224E30F835BA4365D8BB98B" : "Xcode\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iCheck",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ISMK.92225-Lectures\/MyCosHomeWorks\/02.iCheck\/iCheck\/iCheck.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/coshkun\/Xcode.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "72A7E6ED172B33553224E30F835BA4365D8BB98B"
+    }
+  ]
+}
