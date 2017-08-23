@@ -73,6 +73,8 @@ class iCheckViewController: UITableViewController, ItemDetailViewControllerDeleg
     
     func configureCheckmark(cell: UITableViewCell, with item: CheckListItem) {
         let chkMark = cell.viewWithTag(1001) as! UILabel
+        // Check Mark Color
+        chkMark.textColor = view.tintColor
         
         if item.checked {
             //cell.accessoryType = .Checkmark
